@@ -1,0 +1,115 @@
+/*universal*/
+ul {
+	margin:unset;
+	padding:unset;
+}
+
+* {
+	font-family:"Quicksand";
+	color:white;
+}
+
+/*container*/
+#container {
+	width:1250px;
+	border:1px solid #eee;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+
+/*navigation*/
+
+#nav_menu {
+	text-align:center;
+	width:275px;
+	position:fixed;
+}
+
+#nav_menu .recipes {
+	text-transform:uppercase;
+	font-size:1.25em;
+	background-color:orange;
+	height:50px;
+	width:230px;
+	margin:10px;
+	color:white;
+	position:relative;
+}
+
+.recipes:hover {
+	cursor:pointer;
+}
+
+.recipe_title {
+	position:absolute;
+	right:5px;
+	top:14px;
+}
+
+.brief_info_title {
+	width:40px;
+}
+
+.brief_info {
+	list-style-type:none;
+	width:50px;
+	background-color:red;
+	margin-left:10px;
+	width:230px;
+	color:white;
+	text-align:center;
+	font-size:0.75em;
+	line-height:20px;
+	text-align:right;
+}
+
+/*full recipe*/
+#full_recipe_contain {
+	background-color:orange;
+	height:100%;
+	width:950px;
+	float:right;
+	margin-right:30px;
+	margin-top:10px;
+	padding-bottom:10px;
+}
+
+.ingredients_title {
+	color:white;
+	text-align:center;
+}
+
+.ingredients_list {
+	color:white;
+	list-style-type:none;
+	line-height:15px;
+}
+
+.ingred_item {
+	margin-top:10px;
+	width:100%;
+	height:40px;
+	text-align:center;
+}
+
+.direction_list {
+	list-style-type:none;
+}
+
+.information_contain {
+	width:48%;
+	float:left;
+	margin-left:2.5px;
+	margin-right:2.5px;
+}
+
+/*toggle*/
+.hidden {
+	display:none;
+}
+
+.food_pic {
+	width:100%;
+	margin-top:20px;
+}

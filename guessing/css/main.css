@@ -1,0 +1,387 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:Kodchasan;
+}
+
+#fullBG {
+  height:100vh;
+  background-color:#5d4a60;
+}
+
+.blocker {
+  height:20px;
+  width:100%;
+  background-color:#5d4a60;
+}
+
+#phone {
+  width:295px;
+  height:575px;
+  background-color:#ccc;
+  border-radius:10px;
+  margin-left:10px;
+  box-shadow: 0 0 20px #333;
+  position:relative;
+  display:inline-block;
+}
+
+.ledlight {
+  height:12.5px;
+  width:12.5px;
+  background-color:gray;
+  border-radius:50px;
+  position:absolute;
+  top:12.5px;
+  right:60px;
+}
+
+.cameralight, .camera {
+  height:7px;
+  width:7px;
+  background-color:gray;
+  border-radius:5px;
+  position:absolute;
+}
+
+.cameralight {
+  top:10px;
+  left:78px
+}
+
+.camera {
+  top:10px;
+  left:89.5px;
+}
+
+.earlistener {
+  width:75px;
+  height:6px;
+  background-color:gray;
+  border-radius:5px;
+  position:absolute;
+  top:10px;
+  left:107px;
+}
+
+.innerScreen {
+  width:275px;
+  height:485px;
+  background-color:gray;
+  position:absolute;
+  left:10px;
+  top:45px;
+}
+
+.topStatus {
+  height:35px;
+  width:100%;
+  background-color:#444;
+}
+
+.battery {
+  height:25px;
+  width:59px;
+  background-color:white;
+  border-radius:5px;
+  position:absolute;
+  top:4.5px;
+  right:5px;
+}
+
+.batteryLife1, .batteryLife2, .batteryLife3, .batteryLife4, .batteryLife5 {
+  height:20px;
+  width:15%;
+  position:absolute;
+  top:2.75px
+}
+
+.batteryLife1 {
+  background-color:red;
+  left:3px;
+}
+
+.batteryLife2 {
+  background-color:orange;
+  left:14px;
+}
+
+.batteryLife3 {
+  background-color:yellow;
+  left:25px;
+}
+
+.batteryLife4 {
+  background-color:green;
+  left:36px;
+}
+
+.batteryLife5 {
+  background-color:blue;
+  left:47px;
+}
+
+.innerScreenCurve, .innerScreenCurve2 {
+  height:100%;
+  width:20px;
+  background-color:rgba(255,255,255,.25);
+  position:absolute;
+  z-index:2;
+}
+
+.innerScreenCurve {
+  border-bottom-left-radius:10px;
+  border-top-left-radius:10px;
+}
+
+.innerScreenCurve2 {
+  right:0;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+}
+
+.homebutton {
+  width:55px;
+  height:25px;
+  background-color:gray;
+  border-radius:4px;
+  position:absolute;
+  bottom:10px;
+  left:118px;
+}
+
+.homebuttoninner {
+  width:50px;
+  height:20px;
+  background-color:#aaa;
+  border-radius:4px;
+  position:absolute;
+  bottom:2.515px;
+  left:2.45px;
+}
+
+.proPic {
+  height:115px;
+  width:115px;
+  border-radius:100%;
+  margin:auto;
+  margin-top:30px;
+}
+
+.guessBox {
+  width:200px;
+  height:35px;
+  background-color:white;
+  position:absolute;
+  border-radius:10px;
+  top:205px;
+  left:37px;
+  text-align:center;
+}
+
+.keyboardEntire {
+  width:100%;
+  height:35%;
+  background-color:#14b7c0;
+  position:absolute;
+  bottom:0;
+}
+
+.keyboardAuto {
+  width:100%;
+  height:20%;
+  background-color:#178f9d;
+}
+
+.row1 {
+  margin-left:5px;
+  margin-top:14px;
+}
+
+.row2 {
+  margin-left:18px;
+}
+
+.row3 {
+  margin-left:45px;
+}
+
+.keyTile {
+  height:33px;
+  width:22.5px;
+  background-color:white;
+  display:inline-block;
+  border-bottom-left-radius:4px;
+  border-top-right-radius:4px;
+  position:relative;
+  cursor:pointer;
+}
+
+.keyTile p {
+  font-family:Kodchasan;
+  font-size:1.2em;
+  position:absolute;
+  top:6px;
+  color:#8a84a0;
+  cursor:pointer;
+}
+
+
+/**Hover**/
+.keyTile:hover {
+  background-color:#bbb;
+}
+
+.keyTile p:hover {
+  color:#463249;
+}
+
+.keyTile:hover p {
+  color:#463249; 
+}
+
+.homebutton:hover {
+  cursor:pointer;
+}
+
+/**Individual Alphabet Centering**/
+.keyTile#Q p {left:3px;}
+.keyTile#W p {left:2px;}
+.keyTile#E p {left:5px;}
+.keyTile#R p {left:4px;}
+.keyTile#T p {left:5px;}
+.keyTile#Y p {left:5px;}
+.keyTile#U p {left:4px;}
+.keyTile#I p {left:8px;}
+.keyTile#O p {left:3px;}
+.keyTile#P p {left:4px;}
+.keyTile#A p {left:4px;}
+.keyTile#S p {left:5px;}
+.keyTile#D p {left:4px;}
+.keyTile#F p {left:5px;}
+.keyTile#G p {left:4px;}
+.keyTile#H p {left:4px;}
+.keyTile#J p {left:5px;}
+.keyTile#K p {left:5px;}
+.keyTile#L p {left:5px;}
+.keyTile#Z p {left:5px;}
+.keyTile#X p {left:4px;}
+.keyTile#C p {left:4px;}
+.keyTile#V p {left:4px;}
+.keyTile#B p {left:4px;}
+.keyTile#N p {left:4px;}
+.keyTile#M p {left:2px;}
+
+/**Guesser**/
+.guessLetter {
+  width:12%;
+  display:inline-block;
+  margin-top:7px;
+  font-size:1.2em;
+}
+
+#lockStatus {
+  height:35px;
+  width:200px;
+  background-color:white;
+  color:#888;
+  position:absolute;
+  top:255px;
+  left:34px;
+  border-radius:10px;
+  border:3px solid #666;
+  text-align:center;
+}
+
+#lockStatus p {
+  margin-top:9px;
+}
+
+.letterContainer1 {
+  height:250px;
+  width:375px;
+  display:inline-block;
+  float:left;
+  margin-left:200px;
+  margin-right:50px;
+  margin-top:10px;
+  text-align:center;
+  color:white;
+}
+
+.correctTitle {
+  width:100%;
+  height:65px;
+  background-color:#6acc5d;
+  border-radius:50px;
+}
+
+.incorrectTitle {
+  width:100%;
+  height:65px;
+  background-color:#cd5d5c;
+  border-radius:50px;
+}
+
+.lc2 {
+  clear:both;
+  margin-top:50px;
+}
+
+.letterContainer1 h1 {
+  margin:0;
+  padding-top:12px;
+}
+
+/*#correctLetters, #incorrectLetters {
+  width:300px;
+  height:45px;
+  background-color:white;
+  position:absolute;
+  border-radius:50px;
+  left:200px;
+  color:white;
+  font-weight:bold;
+  font-family:Kodchasan;
+  font-size:1.5em;
+  text-align:center;
+}
+
+#correctLetters {
+  top:-520px;
+  background-color:#6acc5d;
+}*/
+
+.usedLetterBox {
+  color:white;
+  margin:2px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  display:inline-block;
+  float:left;
+  font-family:Kodchasan;
+  font-size:2em;
+}
+
+.c2b, .lc2b {
+  width:100%;
+  height:90%;
+  color:black;
+}
+
+.statusFit {
+  height:100%;
+  width:100%;
+  border-radius:50%;
+}
+
+
+.hidden {
+  display:none;
+}
+
+.howto {
+  color:white;
+  width:375px;
+}

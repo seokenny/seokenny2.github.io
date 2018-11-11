@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Guessing Game</title>
+	<link href="css/normalize.css" type="text/css" rel="Stylesheet">
+	<link href="css/main.css" type="text/css" rel="Stylesheet">
+</head>
+<body>
+<div id="fullBG">
+  <div class="blocker">
+  </div>
+<div id="phone">
+  <div class="innerScreenCurve"></div>
+  <div class="innerScreenCurve2"></div>
+  <div class="ledlight"></div>
+  <div class="cameralight"></div>
+  <div class="camera"></div>
+  <div class="earlistener"></div>
+  <div class="innerScreen">
+
+    <div class="topStatus">
+      <div class="battery">
+        <div class="batteryLife1"></div>
+        <div class="batteryLife2"></div>
+        <div class="batteryLife3"></div>
+        <div class="batteryLife4"></div>
+        <div class="batteryLife5"></div>
+      </div>
+    </div>
+
+    <div class="proPic">
+    	<img src="images/locked.png" class="statusFit lockedImage show" id="lockedImage">
+    	<img src="images/access.png" class="statusFit accessImage hidden" id="accessImage">
+    	<img src="images/denied.png" class="statusFit deniedImage hidden" id="deniedImage">
+    </div>
+
+    <div class="guessBox">
+      <div id="letter1" class="guessLetter">-</div>
+      <div id="letter2" class="guessLetter">-</div>
+      <div id="letter3" class="guessLetter">-</div>
+      <div id="letter4" class="guessLetter">-</div>
+      <div id="letter5" class="guessLetter">-</div>
+      <div id="letter6" class="guessLetter">-</div>
+      <div id="letter7" class="guessLetter">-</div>
+    </div>
+
+    <div id="lockStatus"><p id="winLoseStatus">LOCKED</p></div>
+
+    <div class="keyboardEntire">
+      <div class="keyboardAuto">
+      </div>
+      <div class="row row1">
+        <div class="keyTile" id="Q" onClick="letterClicked(this.id)"><p id="Qkey">Q</p></div>
+        <div class="keyTile" id="W" onClick="letterClicked(this.id)"><p id="Wkey">W</p></div>
+        <div class="keyTile" id="E" onClick="letterClicked(this.id)"><p id="Ekey">E</p></div>
+        <div class="keyTile" id="R" onClick="letterClicked(this.id)"><p id="Rkey">R</p></div>
+        <div class="keyTile" id="T" onClick="letterClicked(this.id)"><p id="Tkey">T</p></div>
+        <div class="keyTile" id="Y" onClick="letterClicked(this.id)"><p id="Ykey">Y</p></div>
+        <div class="keyTile" id="U" onClick="letterClicked(this.id)"><p id="Ukey">U</p></div>
+        <div class="keyTile" id="I" onClick="letterClicked(this.id)"><p id="Ikey">I</p></div>
+        <div class="keyTile" id="O" onClick="letterClicked(this.id)"><p id="Okey">O</p></div>
+        <div class="keyTile" id="P" onClick="letterClicked(this.id)"><p id="Pkey">P</p></div>
+      </div>
+      <div class="row row2">
+        <div class="keyTile" id="A" onClick="letterClicked(this.id)"><p id="Akey">A</p></div>
+        <div class="keyTile" id="S" onClick="letterClicked(this.id)"><p id="Skey">S</p></div>
+        <div class="keyTile" id="D" onClick="letterClicked(this.id)"><p id="Dkey">D</p></div>
+        <div class="keyTile" id="F" onClick="letterClicked(this.id)"><p id="Fkey">F</p></div>
+        <div class="keyTile" id="G" onClick="letterClicked(this.id)"><p id="Gkey">G</p></div>
+        <div class="keyTile" id="H" onClick="letterClicked(this.id)"><p id="Hkey">H</p></div>
+        <div class="keyTile" id="J" onClick="letterClicked(this.id)"><p id="Jkey">J</p></div>
+        <div class="keyTile" id="K" onClick="letterClicked(this.id)"><p id="Kkey">K</p></div>
+        <div class="keyTile" id="L" onClick="letterClicked(this.id)"><p id="Lkey">L</p></div>
+      </div>
+      <div class="row row3">
+        <div class="keyTile" id="Z" onClick="letterClicked(this.id)"><p id="Zkey">Z</p></div>
+        <div class="keyTile" id="X" onClick="letterClicked(this.id)"><p id="Xkey">X</p></div>
+        <div class="keyTile" id="C" onClick="letterClicked(this.id)"><p id="Ckey">C</p></div>
+        <div class="keyTile" id="V" onClick="letterClicked(this.id)"><p id="Vkey">V</p></div>
+        <div class="keyTile" id="B" onClick="letterClicked(this.id)"><p id="Bkey">B</p></div>
+        <div class="keyTile" id="N" onClick="letterClicked(this.id)"><p id="Nkey">N</p></div>
+        <div class="keyTile" id="M" onClick="letterClicked(this.id)"><p id="Mkey">M</p></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="homebutton" onClick="reloadPage()">
+    <div class="homebuttoninner" id="restartGame" onClick="location.reload()"></div>
+  <div>
+</div>
+</div>
+</div>
+
+
+<div class="letterContainer1 c2">
+	<div class="correctTitle">
+		<h1>CORRECT LETTERS</h1>
+	</div>
+	<div class="c2b">
+		<p class="listOfCorrect"></p>
+	</div>
+</div>
+<div class="letterContainer1 lc2">
+	<div class="incorrectTitle">
+		<h1>INCORRECT LETTERS</h1>
+	</div>
+	<div class="lc2b">
+		<p class="listOfIncorrect"></p>
+	</div>
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+</style>
+<script src="js/app.js"></script>
+</body>
+</html>

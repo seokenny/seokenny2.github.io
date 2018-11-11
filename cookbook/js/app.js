@@ -1,0 +1,28 @@
+$(document).ready(function(){
+	$("#spidercookiesentire").hide();
+	$(".brief_info").hide();
+	$(".first_recipe").click(function(){
+		$(".first_brief").slideDown();
+		$(".second_brief").hide();
+		$(".third_brief").hide();
+		$("#spidercookiesentire").fadeIn();
+		$("#pumpkinrollesentire").hide();
+		$("#mummypiesentire").hide();
+	});
+	$(".second_recipe").click(function(){
+		$(".second_brief").slideDown();
+		$(".first_brief").hide();
+		$(".third_brief").hide();
+		$("#pumpkinrollsentire").fadeIn();
+		$("#spidercookiesentire").hide();
+		$("#mummypiesentire").hide();
+	});
+	$(".third_recipe").click(function(){
+		$(".third_brief").slideDown();
+		$(".second_brief").hide();
+		$(".first_brief").hide();
+		$("#mummypiesentire").fadeIn();
+		$("#pumpkinrollesentire").hide();
+		$("#spidercookiesentire").hide();
+	});
+});

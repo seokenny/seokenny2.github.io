@@ -1,0 +1,242 @@
+* {
+  font-family:"Roboto Mono";
+}
+
+
+/*Useful*/
+.hidden {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+  margin:unset;
+  padding:unset;
+}
+
+#main_container {
+  width:100%;
+  height:100%;
+  background-color:gray;
+}
+
+#about_me {
+  width:470px;
+  height:100vh;
+  background-color:#dcf1e6;
+  position:fixed;
+  text-align:center;
+}
+
+#work_gallery {
+  width: 60%;
+  float:right;
+}
+
+.work_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:#dcf1e6;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+
+.temppic {
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  background-color:white;
+  margin:25px 0;
+  margin-top:175px;
+}
+
+.myname {
+  background-color:black;
+  color:white;
+  width:150px;
+  padding:15px 0;
+  margin:auto;
+  text-decoration:underline;
+}
+.mydescript {
+  margin-top:10px;
+}
+
+.textboxer {
+  background-color:black;
+  color:white;
+  padding:15px;
+  width:165px;
+  margin-top:20px;
+}
+
+.cookbook {
+  background-color:rgba(0,0,0,.8);
+  /*background-image:url("https://kennseo94.github.io/images/spidercookies.jpg");*/
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.rugsusa {
+  background-color:rgba(0,0,0,.8);
+  /*background-image:url("http://i63.tinypic.com/9fnqlz.png");*/
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.onezerothree {
+  background-color:rgba(0,0,0,.8);
+/*  background-image:url("https://ksr-ugc.imgix.net/assets/021/898/204/98aa2d90eb640954b030cdf0f84660ad_original.jpg?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1533377647&auto=format&frame=1&q=92&s=bfbf9ba1b324c19ec8decbe811555075");
+*/  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.guesser {
+  background-color:rgba(0,0,0,.8);
+/*  background-image:url("http://i63.tinypic.com/2vw9vdf.png");
+*/  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.work_title {
+  color:white;
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,.5);
+  position:absolute;
+  text-align:center;
+  padding-top:115px;
+  display:none;
+}
+
+.work_descript {
+  font-size:.5em;
+  display:none;
+}
+
+#nav_bar a {
+  text-decoration:none;
+  display:block;
+  width:100%;
+  height:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:black;
+}
+
+.nav_item {
+  width:100px;
+  margin:auto;
+  list-style-type:none;
+}
+
+.github_button {
+  width:105px;
+  height:25px;
+  border-radius:20px;
+  background-image:url("../images/github-logo.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-color:white;
+  margin:auto;
+  margin-top:10px;
+}
+
+.aboutmebox {
+  width:60%;
+  font-size:.8em;
+}
+
+.aboutmebox p {
+  line-height:17.5px;
+}
+
+.contact_me_line {
+  font-size:.8em;
+}
+
+.hi_me {
+  font-size:3em;
+  margin-top:20px;
+}
+
+::selection {
+  background:#dcf1e6;
+}
+
+::-moz-selection {
+  background:#dcf1e6;
+}
+
+#skill_list {
+  list-style-type:none;
+}
+
+#skill_list li {
+  height:100px;
+  width:100px;
+  background-color:#dcf1e6;
+  display:inline-block;
+  margin-top:15px;
+}
+
+.two_sider {
+  display:inline-block;
+}
+
+.design_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:#dcf1e6;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+
+.experience_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:#dcf1e6;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+
+.design_tab:hover, .work_tab:hover {
+  cursor:pointer;
+}
+/**CONTACT DESIGN**/
+.contact_form_name {
+  width:300px;
+  display:block;
+}
+
+.contact_form_email {
+  width:300px;
+  display:block;
+}
+
+.contact_form_subject {
+  width:300px;
+  display:block;
+}
+
+.contact_form_textarea {
+  width:300px;
+  display:block;
+}
+
+#contact_area {
+  width:65%;
+  height:350px;
+  background-color:#dcf1e6;
+  margin-bottom:30px;
+}
