@@ -11,34 +11,39 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 </style>
 
-<div id="main_container">
-  <div id="about_me">
-    <img class="temppic">
-    <h5 class="myname">KENNY SEO</h5>
-    <p class="mydescript">Web Developer<br>Graphic Designer</p>
-    <ul id="nav_bar">
-    	<li class="nav_item"><a href="">home</a></li>
-    	<li class="nav_item"><a href="">about</a></li>
-    	<li class="nav_item"><a href="">skills</a></li>
-    	<li class="nav_item"><a href="">projects</a></li>
-    	<li class="nav_item"><a href="">work</a></li>
-    	<li class="nav_item"><a href="">contact</a></li>
-    </ul>
-  </div>
+<!--Nav-->
+<div id="nav_tab">
+	<img class="temppic">
+	<h5 class="myname">KENNY SEO</h5>
+	<p class="mydescript">Web Developer<br>Graphic Designer</p>
+	<ul id="nav_bar">
+		<li class="nav_item"><a href="">home</a></li>
+		<li class="nav_item"><a href="">about</a></li>
+		<li class="nav_item"><a href="">skills</a></li>
+		<li class="nav_item"><a href="">projects</a></li>
+		<li class="nav_item"><a href="">work</a></li>
+		<li class="nav_item"><a href="">contact</a></li>
+	</ul>
+</div>
 
-<div id="work_gallery">
+<!--ENTIRE CONTENT-->
+
+<!--Hello Section-->
+<div class="section_row">
 	<h1 class="hi_me">hi. i'm kenny.</h1>
 </div>
 
-<div id="work_gallery">
+<!--About Me-->
+<div class="section_row">
 	<h3 class="textboxer">ABOUT ME</h3>
-	<div class="aboutmebox">
-	<p>Currently attending Queens College majoring in Graphics Design. I love coding and spend whatever free time I have to teach myself and improve my skills. Whenever I'm not coding, I enjoy playing board games and video games with friends or with meetup groups. I also love my maltese.</p>
-</div>
+	<div class="about_me_box">
+		<p>Currently attending Queens College majoring in Graphics Design. I love coding and spend whatever free time I have to teach myself and improve my skills. I love listening to lofi music and spending time with my friends playing board games and video games. I also love my maltese.</p>
+	</div>
 </div>
 
-  <div id="work_gallery">
-  	<h3 class="textboxer">SKILLS</h3>
+<!--Skills-->
+<div class="section_row">
+	<h3 class="textboxer">SKILLS</h3>
 	<ul id="skill_list">
 		<li><div class="skill_icon"><span>html</span></div></li>
 		<li><div class="skill_icon"><span>css</span></div></li>
@@ -46,75 +51,48 @@
 		<li><div class="skill_icon"><span>adobe ps</span></div></li>
 		<li><div class="skill_icon"><span>adobe ai</span></div></li>
 	</ul>
-  </div>
-
-
-  <div id="work_gallery">
-    <h3 class="textboxer two_sider work_tab">PROJECTS</h3>
-<!--     <h3 class="textboxer two_sider design_tab">DESIGN</h3> -->
-    <div class="work_tile work1 cookbook">
-      <a href="cookbook/index.html">
-      <h3 class="work_title">COOKBOOK<br><span class="work_descript">create a cookbook of three recipes using jquery.</span><br><div class="github_button"></div></h3>
-      </a>
-    </div>
-
-    <div class="work_tile work2 guesser">
-      <a href="guessing/index.html">
-      <h3 class="work_title">GUESSING GAME<br><span class="work_descript">create a guessing game</span><br><div class="github_button"></div></h3>
-      </a>
-    </div>
-
-    <div class="work_tile work3 onezerothree">
-      <a href="onezerothree/index.html">
-      <h3 class="work_title">ONE ZERO THREE<br><span class="work_descript">create a product page for a kickstarter</span><br><div class="github_button"></div></h3>
-      </a>
-    </div>
-
-  </div>
-
-  <div id="work_gallery">
-
-    <div class="design_tile">
-    </div>
-
-    <div class="design_tile">
-    </div>
-
-    <div class="design_tile">
-    </div>
-
-  </div>
-
-
-  <div id="work_gallery">
-  	<h3 class="textboxer">WORK HISTORY</h3>
-      <div class="experience_tile work4 rugsusa">
-      <a href="https:rugsusa.com">
-      <h3 class="work_title">RUGS USA<br><span class="work_descript">front end web developer<br>august 2017 - january 2018</span><br><div class="github_button"></div></h3>
-      </a>
-    </div>
-  </div>
-
-  <div id="work_gallery">
-  	<h3 class="textboxer">CONTACT</h3>
-  	<p class="contact_me_line">Feel free to contact me for any inquiries!</p>
-  
-      <div id="contact_area">
-    <form class="contact-form" action="php/contactform.php" method="post">
-      <input type="text" name="name" placeholder="Full name" class="contact_form_name">
-      <input type="text" name="mail" placeholder="Your e-mail" class="contact_form_email">
-      <input type="text" name="subject" placeholder="Subject" class="contact_form_subject">
-      <textarea name="message" placeholder="Message" class="contact_form_textarea"></textarea>
-      <button type="submit" name="submit">SEND MAIL</button>
-    </form>
-  </div>
-
-  </div>
-  
-  
 </div>
+
+<!--Projects-->
+<div class="section_row">
+	<h3 class="textboxer">PROJECTS</h3>
+	<!--Cookbook-->
+	<div class="work_tile work1 cookbook">
+		<a href="">
+			<h3 class="work_title">COOKBOOK<br><span class="work_descript">create a cookbook of three recipes using jquery.</span><br><div class="github_button"></div></h3>
+		</a>
+	</div>
+	<!--Guessing Game-->
+	<div class="work_tile work2 guesser">
+		<a href="">
+			<h3 class="work_title">GUESSING GAME<br><span class="work_descript">create a guessing game</span><br><div class="github_button"></div></h3>
+		</a>
+	</div>
+	<!--ONE ZERO THREE-->
+	<div class="work_tile work3 onezerothree">
+		<a href="">
+			<h3 class="work_title">ONE ZERO THREE<br><span class="work_descript">create a product page for a kickstarter</span><br><div class="github_button"></div></h3>
+		</a>
+	</div>
+</div>
+
+<!--Work History-->
+<div class="section_row">
+	<h3 class="textboxer">WORK HISTORY</h3>
+	<div class="work_tile work4 rugsusa">
+		<a href="https://rugsusa.com">
+			<h3 class="work_title">RUGS USA<br><span class="work_descript">front end web developer<br>august 2017 - january 2018</span><br><div class="github_button"></div></h3>
+		</a>
+	</div>
+</div>
+
+<!--Contact-->
+<div class="section_row">
+	<h3 class="textboxer">CONTACT</h3>
+	<p class="contact_me_line">Feel free to contact me for any inquiries!</p>
+</div>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html>
