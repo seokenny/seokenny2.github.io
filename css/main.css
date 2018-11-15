@@ -28,6 +28,7 @@ a {
 	padding:15px;
 	width:165px;
 	margin-top:20px;
+	font-size:2em;
 }
 
 /**NAV / KENNY**/
@@ -58,6 +59,15 @@ a {
 	border-radius:50%;
 }
 
+/**ABOUT ME**/
+.hi_me {
+	font-size:6em;
+}
+
+.about_me_box p{
+	font-size:2.5em;
+}
+
 /**SKILLS**/
 /*#skill_list {
 	display:inline-block;
@@ -73,7 +83,7 @@ a {
 /**PROJECTS**/
 .work_tile {
 	width:100%;
-	height:300px;
+	padding-top:100%;
 	margin:10px 0;
 	background-color:#dcf1e6;
 	display:block;
