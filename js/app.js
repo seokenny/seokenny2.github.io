@@ -36,4 +36,7 @@ $(document).ready(function(){
 	$(".work_tile.rugsusa").on("click", function(){
 		$(".rugsusa_slider").slideToggle();
 	});
+	$("#nav_bar_mobile").on("click", function(){
+		$("#nav_bar_mobile").slideUp();
+	});
 });

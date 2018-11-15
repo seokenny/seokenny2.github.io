@@ -45,7 +45,10 @@ a {
 	width:100%;
 	height:100%;
 	text-align:center;
-	padding-top:50%;
+	padding-top:25%;
+	background-image:url("../images/dottedbackground.png");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 #nav_bar_mobile li {
@@ -55,7 +58,7 @@ a {
 
 #nav_bar_mobile a {
 	display:block;
-	font-size:4em;
+	font-size:2.5em;
 	color:black;
 	height:100%;
 	width:100%;
@@ -78,22 +81,49 @@ a {
 .myname {
 	background-color:black;
 	color:white;
-	width:150px;
+	width:350px;
 	padding:15px 0;
 	margin:auto;
+	margin-top:20px;
+	font-size:3em;
 	text-decoration:underline;
 }
 
+.mydescript {
+	font-size:2.5em;
+	background-color:white;
+	width:50%;
+	margin:auto;
+	text-transform:uppercase;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px 0;
+	font-weight:bold;
+}
+
 .temppic {
-	height:150px;
-	width:150px;
+	height:500px;
+	width:500px;
 	background-color:white;
 	border-radius:50%;
+}
+
+#full_width_bmenu {
+	width:100%;
+	height:130px;
+	background-color:rgba(255,255,255,.9);
+	position:fixed;
+	z-index:998;
+}
+
+.sec_row_me {
+	padding-top:155px;
 }
 
 /**ABOUT ME**/
 .hi_me {
 	font-size:6em;
+	background-color:#dcf1e6;
 }
 
 .about_me_box p{
