@@ -116,7 +116,7 @@ a {
 .work_tile {
 	width:100%;
 	padding-top:100%;
-	margin:10px 0;
+	margin:25px 0;
 	background-color:#dcf1e6;
 	display:block;
 	position:relative;
@@ -131,6 +131,33 @@ a {
 	position:absolute;
 	text-align:center;
 	padding-top:115px;
+	font-size:2.5em;
+}
+
+.work_tile_slider {
+	background-color:rgba(0,0,0,.65);
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	color:white;
+	text-align:center;
+	padding-top:40%;
+	font-size:2em;
+}
+
+.guesser {
+	background-image:url("../images/guesserscreen.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.rugsusa {
+	background-image:url("../images/rugsusabackground.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
 }
 
 /**TEST**/
