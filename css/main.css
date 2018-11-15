@@ -39,13 +39,13 @@ a {
 }
 
 #nav_bar_mobile {
-	background-color:rgba(220,241,230);
+	background-color:rgb(220,241,230);
 	z-index:1000;
 	position:fixed;
 	width:100%;
 	height:100%;
 	text-align:center;
-	padding-top:30%;
+	padding-top:50%;
 }
 
 #nav_bar_mobile li {
@@ -135,7 +135,7 @@ a {
 }
 
 .work_tile_slider {
-	background-color:rgba(0,0,0,.65);
+	background-color:rgba(0,0,0,.80);
 	height:100%;
 	width:100%;
 	position:absolute;
@@ -160,22 +160,58 @@ a {
 	background-position:center;
 }
 
+.todo_list {
+	background-image:url("../images/todolistpic.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.name_tag {
+	height:75px;
+	width:100%;
+	font-size:2em;
+	text-align:center;
+	font-weight:bold;
+}
+
+.github_button {
+	background-color:white;
+	height:70px;
+	width:200px;
+	margin:auto;
+	margin-top:20px;
+	border-radius:50px;
+	background-image:url("../images/github-logo.svg");
+	background-size:30%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/**CONTACT**/
+.contact_me_line {
+	font-size:2em;
+}
+
 /**TEST**/
 #burger_menu, #burger_menu_close {
-	height:100px;
-	width:100px;
-	background-color:black;
+	height:75px;
+	width:75px;
 	display:block;
 	position:fixed;
 	margin:3% 0 0 3%;
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 #burger_menu {
 	z-index:999;
+	background-image:url("../images/burgermenu.svg");
 }
 
 #burger_menu_close {
 	position:absolute;
 	top:0;
 	left:0;
+	background-image:url("../images/minus.svg");
 }
