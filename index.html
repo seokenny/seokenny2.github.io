@@ -62,31 +62,20 @@
 <!--Skills-->
 <div class="section_row">
 	<h3 class="textboxer">SKILLS</h3>
-<!-- 	<ul id="skill_list">
-		<li><div class="skill_icon"><span>html</span></div></li>
-		<li><div class="skill_icon"><span>css</span></div></li>
-		<li><div class="skill_icon"><span>js</span></div></li>
-		<li><div class="skill_icon"><span>adobe ps</span></div></li>
-		<li><div class="skill_icon"><span>adobe ai</span></div></li>
-	</ul> -->
+	<div class="skillsimage"></div>
 </div>
 
 <!--Projects-->
 <div class="section_row">
 	<h3 class="textboxer">PROJECTS</h3>
-	<!--Cookbook-->
-<!-- 	<div class="work_tile work1 cookbook">
-		<a href="">
-			<h3 class="work_title">COOKBOOK<br><span class="work_descript">create a cookbook of three recipes using jquery.</span><br><div class="github_button"></div></h3>
-		</a>
-	</div> -->
+	<!--To Do List-->
 	<div class="work_tile work1 todo_list">
 		<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
 	</div>
 	<div class="name_tag">TO DO LIST</div>
 	<!--Guessing Game-->
 	<div class="work_tile work2 guesser">
-		<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">create a guessing game.</span><br><div class="github_button"></div></h3>
+		<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">created a guessing game using javascript; created the phone using css.</span><br><div class="github_button"></div></h3>
 	</div>
 	<div class="name_tag">GUESS GAME</div>
 </div>
@@ -105,6 +94,21 @@
 <div class="section_row">
 	<h3 class="textboxer">CONTACT</h3>
 	<p class="contact_me_line">Feel free to contact me for any inquiries!</p>
+	<div class="container">
+	  <form action="action_page.php">
+		<label for="name" class="contact_label">Name:</label>
+	    <input type="text" id="name" name="name" placeholder="Your name" class="contact_one_liner">
+
+		<label for="email" class="contact_label">Email:</label>
+	    <input type="text" id="email" name="email" placeholder="Your Email" class="contact_one_liner">
+
+		<label for="message" class="contact_label">Message:</label>
+	    <textarea id="subject" name="subject" placeholder="Write anything you want!" class="contact_text_area"></textarea>
+
+	    <input type="submit" value="Submit">
+
+	  </form>
+	</div>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
