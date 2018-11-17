@@ -18,6 +18,7 @@ $(document).ready(function(){
 	// });
 	$("#nav_bar_mobile").hide();
 	$(".work_tile_slider").hide();
+	$("#nav_tab").hide();
 	$("#burger_menu").on("click", function(){
 		$("#nav_bar_mobile").slideDown();
 	});

@@ -65,12 +65,9 @@ a {
 	box-sizing:border-box;
 }
 
-#nav_bar {
-	z-index:1000;
-	position:fixed;
-	width:100vh;
+#nav_tab {
 	height:100vh;
-	background-color:red;
+	z-index:1000;
 }
 
 #nav_bar a{
@@ -225,19 +222,35 @@ a {
 .contact_one_liner {
 	width:100%;
 	height:50px;
-	border:1px solid black;
+	border:1px solid gray;
 	font-size:2em;
+	margin:10px 0;
 }
 
 .contact_text_area {
 	width:100%;
-	border:1px solid black;
+	border:1px solid gray;
 	height:300px;
 	font-size:2em;
+	margin:10px 0;
 }
 
 .contact_label {
 	font-size:2em;
+}
+
+.submit_button {
+	width:101%;
+	height:70px;
+	background-color:black;
+	color:white;
+	font-size:2em;
+	border:1px solid black;
+	margin-top:10px;
+}
+
+.contact_bot_margin {
+	margin-bottom:40px;
 }
 
 /**TEST**/
@@ -261,4 +274,40 @@ a {
 	top:0;
 	left:0;
 	background-image:url("../images/minus.svg");
+}
+
+/**DESKTOP MEDIA QUERY**/
+@media (min-width:1200px){
+	#full_container {
+		width:75%;
+		margin-left:25%;
+	}
+	#full_width_bmenu {
+		display:none !important;
+	}
+	#nav_tab {
+		display:block !important;
+		position:fixed;
+		width:25%;
+	}
+	.temppic {
+		width:175px;
+		height:175px;
+		margin-top:20%;
+	}
+	.mydescript {
+		font-size:1em;
+		width:200px;
+	}
+	.myname {
+		width:175px;
+		font-size:1em;
+	}
+	.sec_row_me {
+		padding-top:75px;
+	}
+	.about_me_box p {
+		font-size:1em;
+		width:75%;
+	}
 }
