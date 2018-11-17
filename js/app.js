@@ -16,9 +16,11 @@ $(document).ready(function(){
 	// 	$(".work4 .work_title").fadeToggle();
 	// 	$(".work4 .work_descript").fadeToggle();
 	// });
+
 	$("#nav_bar_mobile").hide();
 	$(".work_tile_slider").hide();
 	$("#nav_tab").hide();
+
 	$("#burger_menu").on("click", function(){
 		$("#nav_bar_mobile").slideDown();
 	});

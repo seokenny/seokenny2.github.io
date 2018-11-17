@@ -310,4 +310,87 @@ a {
 		font-size:1em;
 		width:75%;
 	}
+	.textboxer {
+		font-size:1em;
+		width:120px;
+	}
+	.skillsimage {
+		width:70%;
+		height:100px;
+		background-image:url("../images/desktopskills.png");
+		margin-bottom:unset;
+	}
+	.work_tile {
+		margin-bottom:10px;
+		display:inline-block;
+	}
+	.work_tile_slider {
+		font-size:1em;
+	}
+	.name_tag {
+		font-size:1em;
+		height:40px;
+	}
+	.full_work_tile {
+		display:inline-block;
+		width:30%;
+	}
+	/**CONTACT MEDIA QUERY**/
+	.contact_me_line, .contact_one_liner, .contact_text_area, .contact_label, .submit_button {
+		font-size:1em;
+	}
+
+	.contact_one_liner, .contact_text_area {
+/*		width:60%;*/
+		height:unset;
+		display:block;
+	}
+	.contact_text_area {
+		height:150px;
+		width:99.5%;
+	}
+	.submit_button {
+/*		width:60.75%;*/
+		height:40px;
+		margin-top:unset;
+	}
+	.contact_container {
+		width:50%;
+	}
 }
+
+/*
+.contact_me_line {
+	font-size:2em;
+}
+
+.contact_one_liner {
+	width:100%;
+	height:50px;
+	border:1px solid gray;
+	font-size:2em;
+	margin:10px 0;
+}
+
+.contact_text_area {
+	width:100%;
+	border:1px solid gray;
+	height:300px;
+	font-size:2em;
+	margin:10px 0;
+}
+
+.contact_label {
+	font-size:2em;
+}
+
+.submit_button {
+	width:101%;
+	height:70px;
+	background-color:black;
+	color:white;
+	font-size:2em;
+	border:1px solid black;
+	margin-top:10px;
+}
+*/
