@@ -4,9 +4,30 @@
   font-family:Kodchasan;
 }
 
-#fullBG {
-  height:100vh;
+body {
   background-color:#5d4a60;
+}
+
+#fullBG {
+  height:100%;
+  background-color:#5d4a60;
+  width:100%;
+  text-align:center;
+}
+
+h2 {
+  text-decoration:underline;
+}
+
+h2, h3 {
+  color:white;
+  margin:10px;
+}
+
+.howtoplay {
+  width:30%;
+  margin:auto;
+  color:white;
 }
 
 .blocker {
@@ -24,6 +45,8 @@
   box-shadow: 0 0 20px #333;
   position:relative;
   display:inline-block;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 .ledlight {
@@ -203,7 +226,6 @@
 }
 
 .row3 {
-  margin-left:45px;
 }
 
 .keyTile {

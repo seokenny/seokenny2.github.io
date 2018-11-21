@@ -117,6 +117,9 @@ a {
 	width:500px;
 	background-color:white;
 	border-radius:50%;
+	background-image:url("../images/testerpic.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 #full_width_bmenu {
@@ -433,3 +436,9 @@ a {
 	margin-top:10px;
 }
 */
+
+.testerbest {
+	height:100%;
+	display:block;
+	width:100%;
+}

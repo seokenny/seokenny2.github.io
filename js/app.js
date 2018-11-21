@@ -74,13 +74,30 @@ $(document).ready(function(){
 		$(".todo_slider").slideToggle();
 	});
 
-	$(".work_tile.guesser").on("click", function(){
-		$(".guess_slider").slideToggle();
+	// $(".work_tile.guesser").on("click", function(){
+	// 	$(".guess_slider").slideToggle();
+	// });
+
+	$(".work_tile.guesser").stop().hover(function(){
+		$(".guess_slider").stop().fadeToggle();
 	});
 
-	$(".work_tile.rugsusa").on("click", function(){
-		$(".rugsusa_slider").slideToggle();
+	// $(".work_tile.rugsusa").on("click", function(){
+	// 	$(".rugsusa_slider").slideToggle();
+	// });
+
+	$(".work_tile.spring_poster").stop().hover(function(){
+		$(".springposter_slider").stop().fadeToggle();
 	});
+
+	$(".work_tile.business_card").stop().hover(function(){
+		$(".businesscard_slider").stop().fadeToggle();
+	});
+
+	$(".work_tile.rugsusa").stop().hover(function(){
+		$(".rugsusa_slider").stop().fadeToggle();
+	});
+
 	$("#nav_bar_mobile").on("click", function(){
 		$("#nav_bar_mobile").slideUp();
 	});

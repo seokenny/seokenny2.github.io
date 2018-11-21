@@ -2,7 +2,7 @@ var clickedLetter = "";
 var counter = 0
 var tries = 5;
 
-var randomWords = ["ACRONYM", "BOUNCER", "CLOAKED", "DUNGEON", "EXCLUDE", "FAILURE", "GRAPPLE", "HEALTHY", "INGRAIN", "JOYLESS", "KITCHEN", "LIGHTEN", "MINUTES", "NUGGETS", "ORGANIC", "POLEAXE", "QUIETLY", "REBIRTH", "SCOWLED", "TIGHTLY", "UNLUCKY", "VECTORS", "WELFARE", "YOUNGER", "ZODIACS"];
+var randomWords = ["ALLERGY", "BEDROOM", "CHANCES", "DIGGING", "EXACTLY", "FAILURE", "GOODBYE", "HEALTHY", "INTERNS", "JOURNEY", "KITCHEN", "LIGHTEN", "MINUTES", "NUGGETS", "ORGANIC", "PLUMMER", "QUIETLY", "ROBBERY", "SEAFOOD", "TEMPEST", "UNLUCKY", "VECTORS", "WELFARE", "YOUNGER", "ZODIACS"];
 
 var randomizer = Math.floor(Math.random() * Math.floor(randomWords.length))
 
@@ -18,13 +18,11 @@ function letterClicked(wasClicked){
       document.getElementById("letter"+(i+1)).innerHTML = clickedLetter;
       counter++;
       numRepeat++;
-      addToCorrect(numRepeat);
     }
     else noLetter++;
   }
   if(noLetter == chosenWord.length){
     tries--;
-    addToIncorrect();
   }
   removeLetter(wasClicked);
   reduceBattery();
