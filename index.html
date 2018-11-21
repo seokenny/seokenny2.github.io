@@ -23,24 +23,24 @@
 	<img class="temppic">
 	<h5 class="myname">KENNY SEO</h5>
 	<p class="mydescript">Web Developer<br>Graphic Designer</p>
-	<li class="nav_item nav_home"><a href="">home</a></li>
-	<li class="nav_item nav_about"><a href="">about</a></li>
-	<li class="nav_item nav_skills"><a href="">skills</a></li>
-	<li class="nav_item nav_projects"><a href="">projects</a></li>
-	<li class="nav_item nav_work"><a href="">work</a></li>
-	<li class="nav_item nav_contact"><a href="">contact</a></li>
+	<li class="nav_item nav_home_mob">home</li>
+	<li class="nav_item nav_about_mob">about</li>
+	<li class="nav_item nav_skills_mob">skills</li>
+	<li class="nav_item nav_projects_mob">projects</li>
+	<li class="nav_item nav_work_mob">work</li>
+	<li class="nav_item nav_contact_mob">contact</li>
 </ul>
 <div id="nav_tab">
 	<img class="temppic">
 	<h5 class="myname">KENNY SEO</h5>
 	<p class="mydescript">Web Developer<br>Graphic Designer</p>
 	<ul id="nav_bar">
-		<li class="nav_item"><a href="">home</a></li>
-		<li class="nav_item"><a href="">about</a></li>
-		<li class="nav_item"><a href="">skills</a></li>
-		<li class="nav_item"><a href="">projects</a></li>
-		<li class="nav_item"><a href="">work</a></li>
-		<li class="nav_item"><a href="">contact</a></li>
+		<li class="nav_item nav_home">home</li>
+		<li class="nav_item nav_about">about</li>
+		<li class="nav_item nav_skills">skills</li>
+		<li class="nav_item nav_projects">projects</li>
+		<li class="nav_item nav_work">work</li>
+		<li class="nav_item nav_contact">contact</li>
 	</ul>
 </div>
 
@@ -49,12 +49,12 @@
 <!--Hello Section-->
 <div id="full_container">
 <div class="section_row sec_row_me">
-	<h1 class="hi_me"><span class="hiken">kenny seo.</span></h1>
+	<h1 class="hi_me"><span class="hiken home_class">kenny seo.</span></h1>
 </div>
 
 <!--About Me-->
 <div class="section_row">
-	<h3 class="textboxer">ABOUT ME</h3>
+	<h3 class="textboxer about_class">ABOUT ME</h3>
 	<div class="about_me_box">
 		<p>Currently attending Queens College majoring in Graphics Design. I love coding and spend whatever free time I have to teach myself and improve my skills. I love listening to lofi music and spending time with my friends playing board games and video games. I also love my maltese.</p>
 	</div>
@@ -62,43 +62,63 @@
 
 <!--Skills-->
 <div class="section_row">
-	<h3 class="textboxer">SKILLS</h3>
+	<h3 class="textboxer skills_class">SKILLS</h3>
 	<div class="skillsimage"></div>
 </div>
 
 <!--Projects-->
 <div class="section_row">
-	<h3 class="textboxer">PROJECTS</h3>
-	<!--To Do List-->
-	<div class="full_work_tile">
-		<div class="work_tile work1 todo_list">
-			<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
-		</div>
-		<div class="name_tag">TO DO LIST</div>
+	<div>
+		<h3 class="textboxer projects_class project_tab tab_active">PROJECTS</h3>
+		<h3 class="textboxer projects_class design_tab">DESIGNS</h3>
 	</div>
-	<!--Guessing Game-->
-	<div class="full_work_tile">
-		<div class="work_tile work2 guesser">
-			<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">created a guessing game using javascript; created the phone using css.</span><br><div class="github_button"></div></h3>
+	<div id="project_content">
+		<!--To Do List-->
+		<div class="full_work_tile">
+			<div class="work_tile work1 todo_list">
+				<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
+			</div>
+			<div class="name_tag">TO DO LIST</div>
 		</div>
-		<div class="name_tag">GUESS GAME</div>
+		<!--Guessing Game-->
+		<div class="full_work_tile">
+			<div class="work_tile work2 guesser">
+				<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">created a guessing game using javascript; created the phone using css.</span><br><div class="github_button"></div></h3>
+			</div>
+			<div class="name_tag">GUESS GAME</div>
+		</div>
+		<!--One Zero Three-->
+	<!-- 	<div class="full_work_tile">
+			<div class="work_tile work2 guesser">
+				<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">created a guessing game using javascript; created the phone using css.</span><br><div class="github_button"></div></h3>
+			</div>
+			<div class="name_tag">GUESS GAME</div>
+		</div> -->
 	</div>
-	<!--NEW IDEA-->
-	<div class="full_work_tile">
-		<div class="work_tile work2 guesser">
-			<h3 class="work_tile_slider guess_slider">GUESSING GAME<br><span class="work_descript">created a guessing game using javascript; created the phone using css.</span><br><div class="github_button"></div></h3>
+	<!--DESIGN TAB-->
+	<div id="design_content">
+		<div class="full_work_tile">
+			<div class="work_tile work1 spring_poster">
+				<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
+			</div>
+			<div class="name_tag">Spring Lecture Poster</div>
 		</div>
-		<div class="name_tag">GUESS GAME</div>
+		<div class="full_work_tile">
+			<div class="work_tile work1 business_card">
+				<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
+			</div>
+			<div class="name_tag">Personal Business Card</div>
+		</div>
 	</div>
 </div>
 
 <!--Work History-->
 <div class="section_row">
-	<h3 class="textboxer">WORK HISTORY</h3>
+	<h3 class="textboxer work_class">WORK HISTORY</h3>
 
 	<div class="full_work_tile">
 		<div class="work_tile work4 rugsusa">
-			<h3 class="work_tile_slider rugsusa_slider">RUGS USA<br><span class="work_descript">front end web developer<br>august 2017 - january 2018</span><br><div class="github_button"></div></h3>
+			<h3 class="work_tile_slider rugsusa_slider">RUGS USA<br><span class="work_descript">front end web developer<br>august 2017 - january 2018</span><br><div class="view_button"></div></h3>
 		</div>
 		<div class="name_tag">RUGS USA</div>
 	</div>
@@ -106,7 +126,7 @@
 
 <!--Contact-->
 <div class="section_row contact_bot_margin">
-	<h3 class="textboxer">CONTACT</h3>
+	<h3 class="textboxer contact_class">CONTACT</h3>
 	<p class="contact_me_line">Feel free to contact me for any inquiries!</p>
 	<div class="contact_container">
 	  <form action="action_page.php">

@@ -20,12 +20,54 @@ $(document).ready(function(){
 	$("#nav_bar_mobile").hide();
 	$(".work_tile_slider").hide();
 	$("#nav_tab").hide();
+	$("#design_content").hide();
+
+	$(".nav_home").click(function(){
+    		$('html, body').animate({ scrollTop: $('#full_container').offset().top }, 'slow');       
+	});
+	$(".nav_about").click(function(){
+            $('html, body').animate({ scrollTop: $('.about_class').offset().top}, 'slow');
+	});
+	$(".nav_skills").click(function(){
+            $('html, body').animate({ scrollTop: $('.skills_class').offset().top}, 'slow');
+	});
+	$(".nav_projects").click(function(){
+            $('html, body').animate({ scrollTop: $('.projects_class').offset().top}, 'slow');
+	});
+	$(".nav_work").click(function(){
+            $('html, body').animate({ scrollTop: $('.work_class').offset().top}, 'slow');
+	});
+	$(".nav_contact").click(function(){
+            $('html, body').animate({ scrollTop: $('.contact_class').offset().top}, 'slow');
+	});
+//Mobile
+	$(".nav_home_mob").click(function(){
+    		$('html, body').animate({ scrollTop: $('#full_container').offset().top }, 'slow');       
+	});
+	$(".nav_about_mob").click(function(){
+            $('html, body').animate({ scrollTop: $('.about_class').offset().top - 130}, 'slow');
+	});
+	$(".nav_skills_mob").click(function(){
+            $('html, body').animate({ scrollTop: $('.skills_class').offset().top - 130}, 'slow');
+	});
+	$(".nav_projects_mob").click(function(){
+            $('html, body').animate({ scrollTop: $('.projects_class').offset().top - 130}, 'slow');
+	});
+	$(".nav_work_mob").click(function(){
+            $('html, body').animate({ scrollTop: $('.work_class').offset().top - 130}, 'slow');
+	});
+	$(".nav_contact_mob").click(function(){
+            $('html, body').animate({ scrollTop: $('.contact_class').offset().top - 130}, 'slow');
+	});
 
 	$("#burger_menu").on("click", function(){
 		$("#nav_bar_mobile").slideDown();
 	});
 	$("#burger_menu_close").on("click", function(){
 		$("#nav_bar_mobile").slideUp();
+	});
+	$("#burger.nav_item").on("click", function(){
+		$("nav_bar_mobile").slideUp();
 	});
 
 	$(".work_tile.todo_list").on("click", function(){
@@ -41,5 +83,20 @@ $(document).ready(function(){
 	});
 	$("#nav_bar_mobile").on("click", function(){
 		$("#nav_bar_mobile").slideUp();
+	});
+
+	$(".design_tab").on("click", function(){
+		$(".project_tab").removeClass("tab_active");
+		this.className+=" tab_active";
+		$("#project_content").stop().slideUp(1000, function(){
+			$("#design_content").slideDown(1000);
+		});
+	});
+	$(".project_tab").on("click", function(){
+		$(".design_tab").removeClass("tab_active");
+		this.className+=" tab_active";
+		$("#design_content").stop().slideUp(1000, function(){
+			$("#project_content").slideDown(1000);
+		});
 	});
 });

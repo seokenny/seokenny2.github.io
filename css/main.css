@@ -38,6 +38,17 @@ a {
 	text-align:center;
 }
 
+.nav_item {
+	cursor:pointer;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:5px 0;
+}
+
+.nav_item:hover {
+	color:white;
+}
+
 #nav_bar_mobile {
 	background-color:rgb(220,241,230);
 	z-index:1000;
@@ -54,6 +65,10 @@ a {
 #nav_bar_mobile li {
 	padding:15px 0;
 	box-sizing:border-box;
+	display:block;
+	font-size:2.5em;
+	color:black;
+	width:100%;
 }
 
 #nav_bar_mobile a {
@@ -62,7 +77,6 @@ a {
 	color:black;
 	height:100%;
 	width:100%;
-	box-sizing:border-box;
 }
 
 #nav_tab {
@@ -139,6 +153,19 @@ a {
 }
 
 /**PROJECTS**/
+.projects_class {
+	display:inline-block;
+}
+
+.project_tab, .design_tab {
+	cursor:pointer;
+}
+
+.tab_active {
+	background-color:#dcf1e6;
+	color:black;
+}
+
 .work_tile {
 	width:100%;
 	padding-top:100%;
@@ -201,17 +228,29 @@ a {
 	font-weight:bold;
 }
 
-.github_button {
-	background-color:white;
-	height:70px;
-	width:200px;
-	margin:auto;
-	margin-top:20px;
-	border-radius:50px;
-	background-image:url("../images/github-logo.svg");
-	background-size:30%;
+.view_proj_button {
+	background-color:#dcf1e6;
+	color:white;
+}
+
+.half_button {
+	width:50%;
+	float:left;
+	margin:unset;
+	margin-top:unset;
+}
+
+/**DESIGN TAB ITEMS**/
+.spring_poster {
+	background-image:url("../images/SpringFront.jpg");
+	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:center;
+}
+
+.business_card {
+	background-image:url("../images/Businesscard.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 /**CONTACT**/
