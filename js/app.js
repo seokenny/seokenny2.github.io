@@ -94,6 +94,14 @@ $(document).ready(function(){
 		$(".businesscard_slider").stop().fadeToggle();
 	});
 
+	$(".work_tile.city_circles").stop().hover(function(){
+		$(".city_slider").stop().fadeToggle();
+	});
+
+	$(".work_tile.oneclub_poster").stop().hover(function(){
+		$(".oneclub_slider").stop().fadeToggle();
+	});
+
 	$(".work_tile.rugsusa").stop().hover(function(){
 		$(".rugsusa_slider").stop().fadeToggle();
 	});

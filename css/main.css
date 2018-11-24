@@ -223,6 +223,20 @@ a {
 	background-position:center;
 }
 
+.city_circles {
+	background-image:url("../images/Paris.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.oneclub_poster {
+	background-image:url("../images/hello_poster.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
 .name_tag {
 	height:75px;
 	width:100%;

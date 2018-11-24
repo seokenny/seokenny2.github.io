@@ -74,9 +74,9 @@ var handlers = {
 		todoList.deleteTodo(position);
 		view.displayTodos();
 	},
-	toggleCompleted: function(){
-		var toggleCompletedInputPosition = document.getElementById("toggleCompletedInputPosition");
-		todoList.toggleCompleted(toggleCompletedInputPosition.valueAsNumber);
+	toggleCompleted: function(position){
+		todoList.toggleCompleted(position);
+		view.displayTodos();
 	}
 }
 
@@ -86,25 +86,33 @@ var view = {
 		todosUl.innerHTML = "";
 		for(var i = 0; i < todoList.todos.length; i++){
 			var todoLi = document.createElement("li");
-			var todoCompleted = "";
 			if(todoList.todos[i].completed == true){
-				todoCompleted = " (x)";
+				todoLi.className+="cross_out"
 			}
 			else {
-				todoCompleted = " ( )";
+				todoLi.className-="cancel_cross";
 			}
 			todoLi.id = i;
-			todoLi.textContent = todoList.todos[i].todoText + todoCompleted;
+			todoLi.textContent = todoList.todos[i].todoText;
 			todoLi.appendChild(this.createDeleteButton());
-			todosUl.appendChild(todoLi);		
+			todosUl.appendChild(todoLi);
+			todoLi.appendChild(this.createCompleteButton());
+			todosUl.appendChild(todoLi);	
 		}
 	},
 	createDeleteButton: function(){
-		var deleteButton = document.createElement('button');
+		var deleteButton = document.createElement('div');
 		deleteButton.textContent = 'Delete';
 		deleteButton.className = 'deleteButton';
 		this.todos
 		return deleteButton;
+	},
+	createCompleteButton: function(){
+		var completeButton = document.createElement("div");
+		completeButton.textContent = "";
+		completeButton.className = "completeButton";
+		this.todos
+		return completeButton;
 	},
 	setUpEventListeners: function(){
 		var todosUl = document.querySelector("ul");
@@ -115,7 +123,30 @@ var view = {
 				handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
 			}
 		});
+		todosUl.addEventListener("click", function(event){
+			var elementClicked = event.target;
+			if(elementClicked.className === 'completeButton'){
+				handlers.toggleCompleted(parseInt(elementClicked.parentNode.id));
+			}
+		});
 	}
 };
 
 view.setUpEventListeners();
+
+$(document).ready(function(){
+	// $("#addtodo_bottom").on("click", function(){
+	// 	if($("#addtodo_bottom").hasClass("slid_up") == false){
+	// 		$("#addtodo_bottom").addClass("slid_up");
+	// 		$("#addtodo_bottom").stop().animate({
+	// 			bottom: '-200px'
+	// 		}, 'slow');
+	// 	}
+	// 	else {
+	// 		$("#addtodo_bottom").removeClass("slid_up");
+	// 		$("#addtodo_bottom").stop().animate({
+	// 			bottom: '-245px'
+	// 		}, 'slow');
+	// 	}
+	// });
+});

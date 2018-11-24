@@ -1,0 +1,63 @@
+* {
+	font-family:"Bahnschrift";
+}
+
+ul {
+	list-style-type:none;
+	margin:unset;
+	padding:unset;
+}
+
+ul li {
+	height:65px;
+	background-color:white;
+	border-bottom:1px solid black;
+}
+
+#container {
+	height:100%;
+	width:100%;
+	position:relative;
+}
+
+#main_banner {
+	width:100%;
+	height:150px;
+	background-image:url("../images/adventurecloud.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#addtodo_bottom {
+	height:300px;
+	width:100%;
+	background-color:#8c7fbd;
+	position:fixed;
+/*	bottom:-245px;*/
+	bottom:-150px;
+}
+
+.deleteButton {
+	display:inline-block;
+}
+
+.completeButton {
+	display:inline-block;
+	height:15px;
+	width:15px;
+	border-radius:50%;
+	background-color:black;
+}
+
+.bottom_margin {
+	width:100%;
+	height:110px;
+}
+
+.cross_out {
+	text-decoration:line-through;
+}
+
+.cancel_cross {
+	text-decoration:none;
+}
