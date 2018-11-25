@@ -106,6 +106,10 @@ $(document).ready(function(){
 		$(".rugsusa_slider").stop().fadeToggle();
 	});
 
+	$(".work_tile.bonghwa").stop().hover(function(){
+		$(".bonghwa_slider").stop().fadeToggle();
+	});
+
 	$("#nav_bar_mobile").on("click", function(){
 		$("#nav_bar_mobile").slideUp();
 	});

@@ -237,6 +237,13 @@ a {
 	background-position:center;
 }
 
+.bonghwa {
+	background-image:url("../images/wip.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center; 
+}
+
 .name_tag {
 	height:75px;
 	width:100%;
