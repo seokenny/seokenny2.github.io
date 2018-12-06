@@ -1,0 +1,404 @@
+* {
+	font-family:"Yantramanav";
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding:unset;
+	margin:unset;
+}
+
+h3 {
+	margin-top:30%;
+}
+.other_nav {
+	width:100%;
+	height:65px;
+	background-color:black;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+ul {
+	margin:unset;
+	padding:unset;
+	display:flex;
+	justify-content:center;
+}
+
+ul li {
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:25px;
+}
+
+#banner {
+	width:100%;
+	height:300px;
+	background-image:url("../images/winterbanner.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#clothe_content {
+	height:100%;
+	width:100%;
+	margin-top:50px;
+}
+
+.row {
+	width:100%;
+	min-height:50px;
+	display:flex;
+	justify-content:center;
+}
+
+.clothe_tile {
+	width:15%;
+	padding-top:15%;
+	border:1px solid #ddd;
+	background-color:white;
+	display:inline-block;
+	position:relative;
+	margin:10px;
+}
+
+.tester {
+	height:100px;
+	width:100px;
+	background-color:red;
+	margin:20%;
+	border-radius:100%;
+	border:10px solid black;
+}
+/**pop clothe**/
+
+.pop_shadow {
+	width:100%;
+	height:100vh;
+	background-color:rgba(0,0,0,0.6);
+	position:fixed;
+	display:flex;
+	justify-content:center;
+	z-index:20000;
+}
+
+.pop_clothe_box {
+	height:500px;
+	width:700px;
+	background-color:white;
+	position:absolute;
+	z-index:20001;
+	margin-top:200px;
+	display:none;
+}
+
+.pop_clothe_image {
+	height:90%;
+	width:50%;
+	margin-top:3.5%;
+	margin-left:3.5%;
+	background-color:white;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	display:inline-block;
+	float:left;
+}
+
+.pop_clothe_desc {
+	width:42%;
+	height:90%;
+	margin-top:3.5%;
+	background-color:white;
+	display:inline-block;
+	float:left;
+}
+
+.pop_clothe1 {
+	background-image:url("../images/jacket1.jpg");
+}
+.pop_clothe2 {
+	background-image:url("../images/jacket2.jpg");
+}
+.pop_clothe3 {
+	background-image:url("../images/jacket3.jpg");
+}
+.pop_clothe4 {
+	background-image:url("../images/jacket4.jpg");
+}
+.pop_clothe5 {
+	background-image:url("../images/jacket5.jpg");
+}
+.pop_clothe6 {
+	background-image:url("../images/jacket6.jpg");
+}
+.pop_clothe7 {
+	background-image:url("../images/jacket7.jpg");
+}
+.pop_clothe8 {
+	background-image:url("../images/jacket8.jpg");
+}
+.pop_clothe9 {
+	background-image:url("../images/jacket9.jpg");
+}
+.pop_clothe10 {
+	background-image:url("../images/jacket10.jpg");
+}
+.pop_clothe11 {
+	background-image:url("../images/jacket11.jpg");
+}
+
+.pop_clothe12 {
+	background-image:url("../images/wjacket1.jpg");
+}
+.pop_clothe13 {
+	background-image:url("../images/wjacket2.jpg");
+}
+.pop_clothe14 {
+	background-image:url("../images/wjacket3.jpg");
+}
+.pop_clothe15 {
+	background-image:url("../images/wjacket4.jpg");
+}
+.pop_clothe16 {
+	background-image:url("../images/wjacket5.jpg");
+}
+.pop_clothe17 {
+	background-image:url("../images/wjacket6.jpg");
+}
+.pop_clothe18 {
+	background-image:url("../images/wjacket7.jpg");
+}
+.pop_clothe19 {
+	background-image:url("../images/wjacket8.jpg");
+}
+.pop_clothe20 {
+	background-image:url("../images/wjacket9.jpg");
+}
+.pop_clothe21 {
+	background-image:url("../images/wjacket10.jpg");
+}
+.pop_clothe22 {
+	background-image:url("../images/wjacket11.jpg");
+}
+
+/**Clothe Tile Pictures**/
+.clothe_tile1 {
+	background-image:url("../images/jacket1.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile2 {
+	background-image:url("../images/jacket2.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile3 {
+	background-image:url("../images/jacket3.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile4 {
+	background-image:url("../images/jacket4.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile5 {
+	background-image:url("../images/jacket5.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile6 {
+	background-image:url("../images/jacket6.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile7 {
+	background-image:url("../images/jacket7.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile8 {
+	background-image:url("../images/jacket8.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile9 {
+	background-image:url("../images/jacket9.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile10 {
+	background-image:url("../images/jacket10.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile11 {
+	background-image:url("../images/jacket11.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile12 {
+	background-image:url("../images/wjacket1.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile13 {
+	background-image:url("../images/wjacket2.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile14 {
+	background-image:url("../images/wjacket3.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile15 {
+	background-image:url("../images/wjacket4.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile16 {
+	background-image:url("../images/wjacket5.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile17 {
+	background-image:url("../images/wjacket6.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile18 {
+	background-image:url("../images/wjacket7.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile19 {
+	background-image:url("../images/wjacket8.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile20 {
+	background-image:url("../images/wjacket9.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile21 {
+	background-image:url("../images/wjacket10.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.clothe_tile22 {
+	background-image:url("../images/wjacket11.jpg");
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.clothe_tile:hover {
+	cursor:pointer;
+}
+
+.title_spot {
+	background-color:black;
+	position:relative;
+}
+
+.title_spot:hover {
+	cursor:unset;
+}
+
+.to_top_contain {
+	min-height:10px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+.top_button {
+	height:50px;
+	width:100px;
+	background-color:white;
+	text-align:center;
+	margin-top:50px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.top_button:hover {
+	color:#aaa;
+}
+
+
+#footer {
+	width:100%;
+	height:200px;
+	background-color:black;
+	margin-top:100px;
+}
+
+.title_spot_women {
+	padding-top:50%;
+	width:100%;
+	background-color:white;
+	position:absolute;
+	top:0;
+	cursor:pointer;
+	background-image:url("../images/women.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.title_spot_men {
+	padding-top:50%;
+	width:100%;
+	background-color:black;
+	position:absolute;
+	bottom:0;
+	cursor:pointer;
+	background-image:url("../images/men.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+li:hover {
+	border-bottom:3px solid white;
+}

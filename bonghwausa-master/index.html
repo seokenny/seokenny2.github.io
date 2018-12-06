@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bonghwa USA Inc.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/normalize.css" rel="Stylesheet" type="text/css">
+	<link href="css/main.css" rel="Stylesheet" type="text/css">
+</head>
+<body>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=K2D|Yantramanav');
+</style>
+
+<div id="main_container">
+
+	<div id="first_view" class="scroll_home">
+		<nav class="navigation">
+			<ul>
+				<li class="nav_home">HOME</li>
+				<li class="nav_about">ABOUT</li>
+				<li class="nav_catalog">CATALOGS</li>
+				<li class="nav_contact">CONTACT</li>
+			</ul>
+		</nav>
+		<div class="main_banner">
+			<div class="company_name"></div>
+		</div>
+		<div class="about_us scroll_about">
+			<h3 class="about_title">OUR COMPANY</h3>
+			<div class="sep_bar"></div>
+			<p class="about_info">Mystiq. markets and distributes men and women apparels. The company was founded in 1991 and is based in Garfield, New Jersey.</p>
+			<div class="sep_bar"></div>
+		</div>
+	</div>
+
+	<div id="catalogs_contain" class="scroll_cat">
+		<div class="catalogs_section">
+			<h2 class="catalogs_tag">CATALOGS</h2>
+		</div>
+		<div class="catalog_tile winter_catalog">
+			<div class="catalog_button"><p><a href="catalogspring.html" class="winter_button">VIEW WINTER</a></p></div>
+		</div>
+		<div class="catalog_tile spring_catalog">
+			<!-- <div class="catalog_button"><p><a href="catalogwinter.html" class="spring_button">VIEW SPRING</a></p></div> -->
+			<div class="catalog_button"><p>VIEW SPRING</p></div>
+		</div>
+	</div>
+
+	<div id="contact_contain" class="scroll_contact">
+		<div class="catalogs_section">
+			<h2 class="catalogs_tag">CONTACT</h2>
+		</div>
+		<div id="contact_form">
+		  <form action="action_page.php">
+
+		    <label for="name">Name:</label>
+		    <input type="text" id="name" name="name" placeholder="Your name..">
+
+		    <label for="email">Email:</label>
+		    <input type="text" id="email" name="email" placeholder="Your email..">
+
+		    <label for="subject">Message:</label>
+		    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+		    <input type="submit" value="Submit" class="submit_button">
+
+		  </form>
+		</div>
+	</div>
+
+	<div id="footer">
+	</div>
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

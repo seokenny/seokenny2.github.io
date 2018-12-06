@@ -1,0 +1,204 @@
+* {
+	margin:unset;
+	padding:unset;
+	font-family:"Yantramanav";
+}
+
+ul {
+	list-style-type:none;
+	height:50px;
+	background-color:white;
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	display:flex;
+	justify-content:center;
+	box-shadow:0 0 5px #ddd;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+ul li {
+	display:inline-block;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:15px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#first_view {
+	width:100%;
+	background-color:white;
+}
+
+.main_banner {
+	width:100%;
+	padding-top:100%;
+	background-image:url('../images/resizedbanner.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.about_title {
+	margin:20px 0;
+	text-align:center;
+}
+
+.about_info {
+	width:70%;
+	margin-left:15%;
+	text-align:center;
+}
+
+/**Catalogs**/
+#catalogs_contain {
+}
+
+.catalogs_section {
+	width:100%;
+	background-color:#222;
+	color:white;
+	height:65px;
+	text-align:center;
+}
+
+.catalogs_section .catalogs_tag {
+	padding-top:20px;
+	letter-spacing:2px;
+}
+
+.catalog_tile {
+	width:80%;
+	padding-top:80%;
+	margin:20px 0 45px 10%;
+	position:relative;
+}
+
+.catalog_button {
+	min-width:50%;
+	height:40px;
+	background-color:#222;
+	position:absolute;
+	bottom:-20px;
+	color:white;
+	text-align:center;
+	left:25%;
+}
+
+.catalog_button p {
+	margin-top:12px;
+	letter-spacing:2px;
+}
+
+.winter_catalog {
+	background-image:url('../images/winter2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.spring_catalog {
+	background-image:url('../images/summer2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/**Contact**/
+#contact_form {
+	margin:20px 0;
+}
+
+label, input, textarea {
+	display:block;
+	width:85%;
+	margin-left:7.5%;
+	box-sizing:border-box;
+}
+
+input, textarea {
+	border:1px solid black;
+	margin-bottom:10px;
+}
+
+.submit_button {
+	background-color:#222;
+	color:white;
+	height:35px;
+	margin-bottom:35px;
+}
+
+/**Footer**/
+#footer {
+	width:100%;
+	height:125px;
+	background-color:#222;
+}
+
+/**Misc**/
+.sep_bar {
+	width:75%;
+	height:2px;
+	background-color:#555;
+	border-radius:100%;
+	margin:20px 0 20px 12.5%;
+}
+
+
+/**MEDIA QUERIES**/
+@media only screen and (min-width:1024px){
+	#first_view {
+		height:100vh;
+	}
+	.main_banner {
+		height:100%;
+		width:100%;
+		padding-top:unset;
+		position:relative;
+	}
+	.company_name {
+		width:20%;
+		height:100%;
+		margin-top:50px;
+		background-image:url("../images/mystiq.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center bottom;
+		position:absolute;
+		right:0;
+		bottom:0;
+	}
+	#catalogs_contain {
+		width:65%;
+		margin-left:17.5%;
+		margin-top:190px;
+		clear:both;
+	}
+	.catalog_tile {
+		float:left;
+		width:50%;
+		margin:unset;
+		padding-top:50%;
+		margin-bottom:80px;
+	}
+	#contact_form {
+		width:50%;
+		margin-left:25%;
+	}
+	.about_us {
+		width:50%;
+		margin-left:25%;
+	}
+	#contact_contain {
+		clear:both;
+	}
+}
+
+.catalog_button {
+	cursor:pointer;
+}
