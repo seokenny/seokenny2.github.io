@@ -102,6 +102,14 @@ $(document).ready(function(){
 		$(".oneclub_slider").stop().fadeToggle();
 	});
 
+	$(".work_tile.self_promotion").stop().hover(function(){
+		$(".self_slider").stop().fadeToggle();
+	});
+
+	$(".work_tile.sunnyside_branding").stop().hover(function(){
+		$(".sunnyside_slider").stop().fadeToggle();
+	});
+
 	$(".work_tile.rugsusa").stop().hover(function(){
 		$(".rugsusa_slider").stop().fadeToggle();
 	});
