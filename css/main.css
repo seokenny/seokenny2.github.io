@@ -230,6 +230,34 @@ a {
 	background-position:center;
 }
 
+.city_circles2 {
+	background-image:url("../images/Japan.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.unity1_poster {
+	background-image:url("../images/unity1.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.unity2_poster {
+	background-image:url("../images/unity2.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.unity3_poster {
+	background-image:url("../images/unity3.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
 .self_promotion {
 	background-image:url("../images/MailerBack.jpg");
 	background-size:cover;
