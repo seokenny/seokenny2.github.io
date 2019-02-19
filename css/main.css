@@ -1,507 +1,345 @@
-/**UNIVERSAL**/
 * {
-	font-family:"Roboto Mono";
+	font-family:"Rubik";
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+/*html {
+	scroll-behavior:smooth;
+}*/
+
+*, h1, h2, h3, h4, h5, h6, ul {
 	margin:unset;
 	padding:unset;
+	color:#fff;
 }
 
-ul {
-	list-style-type:none;
+body {
+	background-color:#111;
 }
 
-a {
-	text-decoration:none;
-}
-
-/**USEFUL**/
-.section_row {
-	width:85%;
-	margin-left:7.5%;
-}
-
-.textboxer {
-	background-color:black;
-	color:white;
-	padding:15px;
-	width:165px;
-	margin-top:20px;
-	font-size:2em;
-}
-
-/**NAV / KENNY**/
-
-#nav_tab {
-	background-color:#dcf1e6;
-	text-align:center;
-}
-
-.nav_item {
-	cursor:pointer;
-	font-weight:bold;
-	text-transform:uppercase;
-	margin:5px 0;
-}
-
-.nav_item:hover {
-	color:white;
-}
-
-#nav_bar_mobile {
-	background-color:rgb(220,241,230);
-	z-index:1000;
+/**NAVIGATION**/
+#nav_mobile {
 	position:fixed;
-	width:100%;
-	height:100%;
-	text-align:center;
-	padding-top:25%;
-	background-image:url("../images/dottedbackground.png");
-	background-size:cover;
-	background-repeat:no-repeat;
-}
-
-#nav_bar_mobile li {
-	padding:15px 0;
-	box-sizing:border-box;
-	display:block;
-	font-size:2.5em;
-	color:black;
-	width:100%;
-}
-
-#nav_bar_mobile a {
-	display:block;
-	font-size:2.5em;
-	color:black;
-	height:100%;
-	width:100%;
-}
-
-#nav_tab {
 	height:100vh;
-	z-index:1000;
+	width:100%;
+	background-color:blue;
+	z-index:9999;
 }
 
-#nav_bar a{
-	text-decoration:none;
-	color:black;
+.burger_menu {
+	height:35px;
+	width:35px;
+	position:absolute;
+	right:20px;
+	top:20px;
 }
 
-.myname {
-	background-color:black;
-	color:white;
-	width:350px;
-	padding:15px 0;
-	margin:auto;
-	margin-top:20px;
-	font-size:3em;
-	text-decoration:underline;
+.nav_mobile_menu {
+	list-style-type:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
 }
 
-.mydescript {
-	font-size:2.5em;
-	background-color:white;
-	width:50%;
-	margin:auto;
-	text-transform:uppercase;
-	margin-top:20px;
-	margin-bottom:20px;
-	padding:10px 0;
+.nav_mobile_menu li {
+	font-size:4em;
 	font-weight:bold;
+	margin:25px 0;
 }
 
-.temppic {
-	height:500px;
-	width:500px;
-	background-color:white;
-	border-radius:50%;
-	background-image:url("../images/logoicon.png");
-	background-size:cover;
-	background-repeat:no-repeat;
+.close_mobile {
+	height:35px;
+	width:35px;
+	position:absolute;
+	right:20px;
+	top:20px;
 }
 
-#full_width_bmenu {
+/**BANNER**/
+#banner_contain {
+	height:100vh;
 	width:100%;
-	height:130px;
-	background-color:rgba(255,255,255,.9);
-	position:fixed;
-	z-index:998;
+	background-color:black;
 }
 
-.sec_row_me {
-	padding-top:155px;
+/**HELLO**/
+#hello_contain {
+	padding:75px 0;
 }
 
-/**ABOUT ME**/
-.hi_me {
-	font-size:6em;
-	background-color:#dcf1e6;
+.hello_width {
+	letter-spacing:0.1em;
+	width:80%;
+	margin-left:10%;
+	text-align:center;
 }
 
-.about_me_box p{
-	font-size:2.5em;
+.hello_width h1 {
+	padding-bottom:25px;
 }
 
-/**SKILLS**/
-.skillsimage {
-	background-image:url("../images/allskills.png");
-	background-repeat:no-repeat;
-	height:200px;
-	width:100%;
-	background-size:contain;
-	margin-top:25px;
-	margin-bottom:75px;
+.hello_width p {
+	line-height:1.75em;
 }
 
-/**PROJECTS**/
-.projects_class {
-	display:inline-block;
-}
-
-.project_tab, .design_tab {
-	cursor:pointer;
-}
-
-.tab_active {
-	background-color:#dcf1e6;
-	color:black;
-}
-
+/**WORK**/
 .work_tile {
 	width:100%;
-	padding-top:100%;
-	margin:25px 0;
-	background-color:#dcf1e6;
-	display:block;
+	height:300px;
+	margin:40px 0;
 	position:relative;
-	overflow:hidden;
 }
 
-.work_title {
-	color:white;
-	height:100%;
-	width:100%;
-	background-color:rgba(0,0,0,.5);
+.wt_center {
+	/**Start of vertical/horizontal centering**/
 	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
 	text-align:center;
-	padding-top:115px;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
+.wt_center p {
+	font-size:.8em;
+}
+
+.wt_center h1 {
 	font-size:2.5em;
 }
 
-.work_tile_slider {
-	background-color:rgba(0,0,0,.80);
+.wt_rugs {
+	background-image:url("../images/rugsusa.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.rugs_color {
+	background-color:rgba(255,40,40,0.8);
 	height:100%;
 	width:100%;
-	position:absolute;
-	top:0;
-	color:white;
-	text-align:center;
-	padding-top:40%;
-	font-size:2em;
 }
 
-.guesser {
-	background-image:url("../images/guesserscreen.png");
-	background-size:cover;
+.wt_fuyu {
+	background-image:url("../images/fuyuramen.png");
 	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.rugsusa {
-	background-image:url("../images/rugsusa.jpg");
 	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
 }
 
-.todo_list {
-	background-image:url("../images/todolistpic.png");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.city_circles {
-	background-image:url("../images/Paris.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.city_circles2 {
-	background-image:url("../images/Japan.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.unity1_poster {
-	background-image:url("../images/unity1.png");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.unity2_poster {
-	background-image:url("../images/unity2.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.unity3_poster {
-	background-image:url("../images/unity3.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.self_promotion {
-	background-image:url("../images/MailerBack.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.sunnyside_branding {
-	background-image:url("../images/SunnysideLogoUpdate.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.oneclub_poster {
-	background-image:url("../images/hello_poster.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-}
-
-.bonghwa {
-	background-image:url("../images/bonghwausa.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center; 
-}
-
-.name_tag {
-	height:75px;
+.fuyu_color {
+	background-color:rgba(21,154,130,0.8);
+	height:100%;
 	width:100%;
-	font-size:2em;
-	text-align:center;
-	font-weight:bold;
 }
 
-.view_proj_button {
-	background-color:#dcf1e6;
-	color:white;
-}
-
-.half_button {
-	width:50%;
-	float:left;
-	margin:unset;
-	margin-top:unset;
-}
-
-/**DESIGN TAB ITEMS**/
-.spring_poster {
-	background-image:url("../images/SpringFront.jpg");
-	background-size:cover;
+.wt_guesser {
+	background-image:url("../images/guesser.png");
 	background-repeat:no-repeat;
+	background-size:cover;
 }
 
-.business_card {
-	background-image:url("../images/Businesscard.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
+.guesser_color {
+	background-color:rgba(132,10,163,0.8);
+	height:100%;
+	width:100%;
 }
 
 /**CONTACT**/
-.contact_me_line {
-	font-size:2em;
+#contact_contain {
 }
 
-.contact_one_liner {
+.contain_border {
 	width:100%;
-	height:50px;
-	border:1px solid gray;
-	font-size:2em;
-	margin:10px 0;
+	padding:25px 0;
+	background-color:white;
 }
 
-.contact_text_area {
-	width:100%;
-	border:1px solid gray;
-	height:300px;
-	font-size:2em;
-	margin:10px 0;
+.contact_text {
+	margin-left:10%;
+	width:80%;
 }
 
-.contact_label {
-	font-size:2em;
+.contact_text h1 {
+	font-size:3em;
 }
 
-.submit_button {
-	width:101%;
-	height:70px;
-	background-color:black;
-	color:white;
-	font-size:2em;
+.contact_text p {
+	font-size:0.85em;
+}
+
+.contact_text h1, .contact_text p {
+	color:#111;
+}
+
+label {
+	color:#111;
+}
+
+.contact_row {
 	border:1px solid black;
-	margin-top:10px;
-}
-
-.contact_bot_margin {
-	margin-bottom:40px;
-}
-
-/**TEST**/
-#burger_menu, #burger_menu_close {
+	width:80%;
 	height:75px;
-	width:75px;
+	margin:15px 0;
+	margin-left:10%;
+	box-sizing:border-box;
+}
+
+input {
+	border:unset;
+	color:#111 !important;
+}
+
+.c_number {
+	width:20%;
 	display:block;
-	position:fixed;
-	margin:3% 0 0 3%;
-	background-size:cover;
-	background-repeat:no-repeat;
-}
-
-#burger_menu {
-	z-index:999;
-	background-image:url("../images/burgermenu.svg");
-}
-
-#burger_menu_close {
-	position:absolute;
-	top:0;
-	left:0;
-	background-image:url("../images/minus.svg");
-}
-
-/**DESKTOP MEDIA QUERY**/
-@media (min-width:1200px){
-	#full_container {
-		width:75%;
-		margin-left:25%;
-	}
-	#full_width_bmenu {
-		display:none !important;
-	}
-	#nav_tab {
-		display:block !important;
-		position:fixed;
-		width:25%;
-	}
-	.temppic {
-		width:175px;
-		height:175px;
-		margin-top:20%;
-	}
-	.mydescript {
-		font-size:1em;
-		width:200px;
-	}
-	.myname {
-		width:175px;
-		font-size:1em;
-	}
-	.sec_row_me {
-		padding-top:75px;
-	}
-	.about_me_box p {
-		font-size:1em;
-		width:75%;
-	}
-	.textboxer {
-		font-size:1em;
-		width:120px;
-	}
-	.skillsimage {
-		width:70%;
-		height:100px;
-		background-image:url("../images/desktopskills.png");
-		margin-bottom:unset;
-	}
-	.work_tile {
-		margin-bottom:10px;
-		display:inline-block;
-	}
-	.work_tile_slider {
-		font-size:1em;
-	}
-	.name_tag {
-		font-size:1em;
-		height:40px;
-	}
-	.full_work_tile {
-		display:inline-block;
-		width:30%;
-	}
-	/**CONTACT MEDIA QUERY**/
-	.contact_me_line, .contact_one_liner, .contact_text_area, .contact_label, .submit_button {
-		font-size:1em;
-	}
-
-	.contact_one_liner, .contact_text_area {
-/*		width:60%;*/
-		height:unset;
-		display:block;
-	}
-	.contact_text_area {
-		height:150px;
-		width:99.5%;
-	}
-	.submit_button {
-/*		width:60.75%;*/
-		height:40px;
-		margin-top:unset;
-	}
-	.contact_container {
-		width:50%;
-	}
-}
-
-/*
-.contact_me_line {
-	font-size:2em;
-}
-
-.contact_one_liner {
-	width:100%;
-	height:50px;
-	border:1px solid gray;
-	font-size:2em;
-	margin:10px 0;
-}
-
-.contact_text_area {
-	width:100%;
-	border:1px solid gray;
-	height:300px;
-	font-size:2em;
-	margin:10px 0;
-}
-
-.contact_label {
-	font-size:2em;
-}
-
-.submit_button {
-	width:101%;
-	height:70px;
-	background-color:black;
-	color:white;
-	font-size:2em;
-	border:1px solid black;
-	margin-top:10px;
-}
-*/
-
-.testerbest {
 	height:100%;
+	float:left;
+	position:relative;
+}
+
+.c_num_pos {
+	color:black;
+	font-size:3em;
+	font-weight:500;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.c_input {
+	width:80%;
 	display:block;
+	height:100%;
+	float:left;
+}
+
+/**FOOTER**/
+footer {
+	margin-top:50px;
+	height:150px;
 	width:100%;
+	text-align:center;
+	font-size:0.7em;
+	letter-spacing:0.1em;
+}
+
+.social_list {
+	text-align:center;
+}
+
+.social_list li {
+	display:inline-block;
+}
+
+.social_button {
+	height:35px;
+	width:35px;
+	margin:10px 5px 25px 5px;
+}
+
+/**RUGSUSA HTML**/
+#rugsusa_banner {
+	width:100%;
+	padding-top:100%;
+	background-color:red;
+}
+
+.rugs_brief {
+	letter-spacing:0.1em;
+	width:85%;
+	margin-left:7.5%;
+	text-align:center;
+	line-height:1.75em;
+}
+
+.rugs_brief h2 {
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.rugs_brief p {
+	font-size:0.8em;
+}
+
+.rugs_logo {
+	width:75%;
+	padding-top:25%;
+	margin:25px 0;
+	margin-left:12.5%;
+	background-color:white;
+}
+
+.rug_image {
+	width:75%;
+	min-height:5px;
+	background-color:white;
+	margin:25px 0;
+	margin-left:12.5%;
+}
+
+.l_rug_image {
+	width:75%;
+	padding-top:115%;
+	background-color:white;
+	margin:25px 0;
+	margin-left:12.5%;
+}
+
+/**FUYU RAMEN**/
+
+
+/**GUESSER**/
+
+/**MISC**/
+.hidden {
+	display:none;
+}
+
+.back_top {
+	width:50px;
+	height:50px;
+	background-color:purple;
+	box-shadow:0 0 5px #444;
+	border-radius:100%;
+	position:fixed;
+	bottom:25px;
+	right:25px;
+	z-index:20000;
+}
+
+/*.email_row * {
+	display:none;
+}
+
+.hidden_c_row {
+	height:20px;
+}*/
+
+.contact_textarea {
+    height: 100px;
+    width: 80%;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border:unset;
+    max-height:100%;
+}
+
+.message_row {
+	height:200px;
+}
+
+.sub_button {
+	width:80%;
+	margin-left:10%;
+	background-color:#222;
+	color:white !important;
+	height:40px;
+}
+
+form {
+	box-sizing:border-box;
 }

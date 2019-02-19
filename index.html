@@ -2,206 +2,109 @@
 <html>
 <head>
 	<title>Kenny Seo | Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/lightbox.css" type="text/css" rel="Stylesheet">
 	<link href="css/normalize.css" type="text/css" rel="Stylesheet">
 	<link href="css/main.css" type="text/css" rel="Stylesheet">
-	<link href="css/mediaq.css" type="text/css" rel="Stylesheet">
-	<link href="css/lightbox.css" type="text/css" rel="Stylesheet">
 </head>
 <body>
-
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
 </style>
 
-<!--Nav-->
-<div id="full_width_bmenu">
-	<div id="burger_menu">
+<div class="back_top">
+</div>
+
+<div id="main_contain">
+	<div id="nav_mobile" class="hidden">
+		<img src="images/cross-mark.svg" class="close_mobile">
+		<ul class="nav_mobile_menu">
+			<li class="nav_about">ABOUT</li>
+			<li class="nav_works">WORK</li>
+			<li class="nav_contact">CONTACT</li>
+		</ul>
 	</div>
-</div>
-
-<ul id="nav_bar_mobile">
-	<div id="burger_menu_close"></div>
-	<img class="temppic">
-	<h5 class="myname">KENNY SEO</h5>
-	<p class="mydescript">Web Developer<br>Graphic Designer</p>
-	<li class="nav_item nav_home_mob">home</li>
-	<li class="nav_item nav_about_mob">about</li>
-	<li class="nav_item nav_skills_mob">skills</li>
-	<li class="nav_item nav_projects_mob">projects</li>
-	<li class="nav_item nav_work_mob">work</li>
-	<li class="nav_item nav_contact_mob">contact</li>
-</ul>
-<div id="nav_tab">
-	<img class="temppic">
-	<h5 class="myname">KENNY SEO</h5>
-	<p class="mydescript">Web Developer<br>Graphic Designer</p>
-	<ul id="nav_bar">
-		<li class="nav_item nav_home">home</li>
-		<li class="nav_item nav_about">about</li>
-		<li class="nav_item nav_skills">skills</li>
-		<li class="nav_item nav_projects">projects</li>
-		<li class="nav_item nav_work">work</li>
-		<li class="nav_item nav_contact">contact</li>
-	</ul>
-</div>
-
-<!--ENTIRE CONTENT-->
-
-<!--Hello Section-->
-<div id="full_container">
-<div class="section_row sec_row_me">
-	<h1 class="hi_me"><span class="hiken home_class">kenny seo.</span></h1>
-</div>
-
-<!--About Me-->
-<div class="section_row">
-	<h3 class="textboxer about_class">ABOUT ME</h3>
-	<div class="about_me_box">
-		<p>Currently attending Queens College majoring in Graphics Design. I love coding and spend whatever free time I have to teach myself and improve my skills. I love listening to lofi music and spending time with my friends playing board games and video games. I also love my maltese.</p>
+	<div id="nav_mobile_button">
+		<img src="images/menu.svg" class="burger_menu">
 	</div>
-</div>
-
-<!--Skills-->
-<div class="section_row">
-	<h3 class="textboxer skills_class">SKILLS</h3>
-	<div class="skillsimage"></div>
-</div>
-
-<!--Projects-->
-<div class="section_row">
-	<div>
-		<h3 class="textboxer projects_class project_tab tab_active">PROJECTS</h3>
-		<h3 class="textboxer projects_class design_tab">DESIGNS</h3>
+	<div id="banner_contain">
 	</div>
-	<div id="project_content">
-		<!--To Do List-->
-		<div class="full_work_tile">
-			<div class="work_tile work1 todo_list">
-				<h3 class="work_tile_slider todo_slider">TO DO LIST<br><span class="work_descript">to do list for tracking needs</span><br><div class="github_button"></div></h3>
-			</div>
-			<div class="name_tag">TO DO LIST</div>
+
+	<div id="hello_contain">
+		<div class="hello_width">
+			<h1>Hello,</h1>
+			<p>I'm a Front End Web Developer with an interest in minimalistic designs. I'm a Graphic Design major at Queens College NY. I love coding while listening to lofi music.</p>
 		</div>
-		<!--Guessing Game-->
-		<div class="full_work_tile">
-			<a href="guessing/index.html"><div class="work_tile work2 guesser">
-				<h3 class="work_tile_slider guess_slider"><span class="work_descript">created a guessing game using javascript for the functions and css for the phone.</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">PASSWORD GUESS GAME</div>
-		</div>
-		<!--One Zero Three-->
 	</div>
-	<!--DESIGN TAB-->
-	<div id="design_content">
-		<div class="full_work_tile">
-			<a href="images/SpringFront.jpg" data-lightbox="roadtrip" data-title="Spring Lecture Poster Front">
-				<div class="work_tile work1 spring_poster">
-					<h3 class="work_tile_slider springposter_slider"><span class="work_descript">poster for a lecture hosted by USC School of Architecture in a minimalistic black and white swiss style.</span><br><div class="github_button"></div></h3>
+
+	<div id="work_contain">
+		<a href="rugsusa.html">
+			<div class="work_tile wt_rugs">
+				<div class="rugs_color"></div>
+				<div class="wt_center">
+					<p>JR. FRONT END WEB DEVELOPER</p>
+					<h1>RUGS USA</h1>
 				</div>
-			</a>
-			<a href="images/SpringBack.jpg" data-lightbox="roadtrip" data-title="Spring Lecture Poster Back"></a>
-			<div class="name_tag">SPRING LECTURE POSTER</div>
-		</div>
-<!-- 		<div class="full_work_tile">
-			<a href="images/hello_posterfull.jpg" data-lightbox="image-1" data-title="Hello from the other side"><div class="work_tile work1 oneclub_poster">
-				<h3 class="work_tile_slider oneclub_slider"><span class="work_descript">submission for the One Club / TOGETHER migrant poster contest.</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">ONE CLUB CONTEST</div>
-		</div> -->
-<!-- 		<div class="full_work_tile">
-			<a href="images/Businesscard.jpg" data-lightbox="image-1" data-title="Personal Business Card"><div class="work_tile work1 business_card">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">my personal business card.</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">PERSONAL BUSINESS CARD</div>
-		</div> -->
-<!-- 		<div class="full_work_tile">
-			<a href="images/Paris.jpg" data-lightbox="roadtrip" data-title="Paris Circle">
-				<div class="work_tile work1 city_circles">
-					<h3 class="work_tile_slider city_slider"><span class="work_descript">circles of cities and its landmarks</span><br><div class="github_button"></div></h3>
-				</div>
-			</a>
-			<a href="images/Japan.jpg" data-lightbox="roadtrip" data-title="Tokyo Circle"></a>
-			<div class="name_tag">CITY CIRCLES</div>
-		</div> -->
-
-		<div class="full_work_tile">
-			<a href="images/Paris.jpg" data-lightbox="image-1" data-title="Hello Poster"><div class="work_tile work1 city_circles">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">circles of cities and its landmarks</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">Paris</div>
-		</div>
-
-		<div class="full_work_tile">
-			<a href="images/Japan.jpg" data-lightbox="image-1" data-title="Hello Poster"><div class="work_tile work1 city_circles2">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">circles of cities and its landmarks</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">Japan</div>
-		</div>
-
-		<div class="full_work_tile">
-			<a href="images/unity1.jpg" data-lightbox="image-1" data-title="Hello Poster"><div class="work_tile work1 unity1_poster">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">one club of creativity poster</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">Invisible</div>
-		</div>
-
-		<div class="full_work_tile">
-			<a href="images/unity2.jpg" data-lightbox="image-1" data-title="Hello Poster"><div class="work_tile work1 unity2_poster">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">one club of creativity poster</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">Invisible</div>
-		</div>
-
-		<div class="full_work_tile">
-			<a href="images/unity3.jpg" data-lightbox="image-1" data-title="Hello Poster"><div class="work_tile work1 unity3_poster">
-				<h3 class="work_tile_slider businesscard_slider"><span class="work_descript">Subway Map Awareness</span><br><div class="github_button"></div></h3>
-			</div></a>
-			<div class="name_tag">Subway</div>
-		</div>
-
-	</div>
-</div>
-
-<!--Work History-->
-<div class="section_row">
-	<h3 class="textboxer work_class">WORK HISTORY</h3>
-	<div class="full_work_tile">
-		<a href="https://seokenny.github.io/bonghwausa-master/index.html">
-			<div class="work_tile work4 bonghwa">
-				<h3 class="work_tile_slider bonghwa_slider">Bonghwa USA Inc.<br><span class="work_descript">freelance<br>november 2018 - present</span><br><div class="view_button"></div></h3>
 			</div>
 		</a>
-		<div class="name_tag">BONGHWA USA INC.</div>
-	</div>
-	<div class="full_work_tile">
-		<a href="https://rugsusa.com">
-			<div class="work_tile work4 rugsusa">
-				<h3 class="work_tile_slider rugsusa_slider">Rugs USA<br><span class="work_descript">front end web developer<br>august 2017 - january 2018</span><br><div class="view_button"></div></h3>
+
+		<a href="fuyuramen.html">
+			<div class="work_tile wt_fuyu">
+				<div class="fuyu_color"></div>
+				<div class="wt_center">
+					<p>RESTAURANT WEBSITE</p>
+					<h1>FUYU RAMEN</h1>
+				</div>
 			</div>
 		</a>
-		<div class="name_tag">RUGS USA</div>
+
+		<a href="projectguesser.html">
+			<div class="work_tile wt_guesser">
+				<div class="guesser_color"></div>
+				<div class="wt_center">
+					<p>PROJECT</p>
+					<h1>GUESSER</h1>
+				</div>
+			</div>
+		</a>
 	</div>
-</div>
 
-<!--Contact-->
-<div class="section_row contact_bot_margin">
-	<h3 class="textboxer contact_class">CONTACT</h3>
-	<p class="contact_me_line">Feel free to contact me for any inquiries!</p>
-	<div class="contact_container">
-	  <form action="action_page.php">
-		<label for="name" class="contact_label">Name:</label>
-	    <input type="text" id="name" name="name" placeholder="Your name" class="contact_one_liner">
+	<div id="contact_contain">
+		<div class="contain_border">
+			<div class="contact_text">
+				<h1>CONTACT.</h1>
+				<p>FEEL FREE TO CONTACT ME FOR ANY INQUIRIES</p>
+			</div>
+		  <form action="action_page.php">
+		  	<div class="contact_row">
+		    	<label for="name" class="c_number"><span class="c_num_pos">01</span></label>
+		    	<input  class="c_input" type="text" id="name" name="name" placeholder="Your Name..">
+			</div>
 
-		<label for="email" class="contact_label">Email:</label>
-	    <input type="text" id="email" name="email" placeholder="Your Email" class="contact_one_liner">
+		  	<div class="contact_row email_row hidden_c_row">
+		    	<label for="name" class="c_number"><span class="c_num_pos">02</span></label>
+		    	<input  class="c_input" type="text" id="name" name="name" placeholder="Your Email..">
+			</div>
 
-		<label for="message" class="contact_label">Message:</label>
-	    <textarea id="subject" name="subject" placeholder="Write anything you want!" class="contact_text_area"></textarea>
+			<div class="contact_row message_row">
+		    	<label for="subject" class="c_number"><span class="c_num_pos">03</span></label>
+		    	<textarea id="subject" class="contact_textarea" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+			</div>
 
-	    <input type="submit" value="SUBMIT" class="submit_button">
+		    <input type="submit" value="SUBMIT" class="sub_button">
 
-	  </form>
+		  </form>
+		</div>
 	</div>
-</div>
+
+	<footer>
+		<ul class="social_list">
+			<li><a href="https://github.com/seokenny"><img src="images/github.svg" class="social_button"></a></li>
+			<li><a href="https://www.linkedin.com/in/kenny-seo-311918137/"><img src="images/linkedin.svg" class="social_button"></a></li>
+			<li><img src="images/email.svg" class="social_button"></li>
+		</ul>
+		<p>&copy; Copyright 2019 Kenny Seo</p>
+	</footer>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
