@@ -13,7 +13,10 @@
 }
 
 body {
-	background-color:#111;
+	background-image:url("../images/darkgalaxy.png");
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 /**NAVIGATION**/
@@ -21,8 +24,16 @@ body {
 	position:fixed;
 	height:100vh;
 	width:100%;
-	background-color:blue;
+	background-color:black;
 	z-index:9999;
+}
+
+#nav_mobile_button {
+	background-color:black;
+	height:55px;
+	position:fixed;
+	z-index:9998;
+	width:100%;
 }
 
 .burger_menu {
@@ -30,7 +41,8 @@ body {
 	width:35px;
 	position:absolute;
 	right:20px;
-	top:20px;
+	top:10px;
+	cursor:pointer;
 }
 
 .nav_mobile_menu {
@@ -45,6 +57,7 @@ body {
 	font-size:4em;
 	font-weight:bold;
 	margin:25px 0;
+	cursor:pointer;
 }
 
 .close_mobile {
@@ -59,7 +72,7 @@ body {
 #banner_contain {
 	height:100vh;
 	width:100%;
-	background-color:black;
+/*	background-color:black;*/
 }
 
 /**HELLO**/
@@ -111,7 +124,7 @@ body {
 }
 
 .wt_rugs {
-	background-image:url("../images/rugsusa.png");
+	background-image:url("../images/rugsbanner.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -123,7 +136,7 @@ body {
 }
 
 .wt_fuyu {
-	background-image:url("../images/fuyuramen.png");
+	background-image:url("../images/fuyubanner.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -134,8 +147,20 @@ body {
 	width:100%;
 }
 
+.wt_mystiq {
+	background-image:url("../images/mystiqbanner.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.mystiq_color {
+	background-color:rgba(41,75,255,0.8);
+	height:100%;
+	width:100%;
+}
+
 .wt_guesser {
-	background-image:url("../images/guesser.png");
+	background-image:url("../images/guessbanner.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -288,6 +313,14 @@ footer {
 	margin-left:12.5%;
 }
 
+.nav_mob_but_rugs {
+	position:unset !important;
+}
+
+.rugs_page_banner {
+	margin:unset;
+}
+
 /**FUYU RAMEN**/
 
 
@@ -342,4 +375,109 @@ footer {
 
 form {
 	box-sizing:border-box;
+}
+
+/**MEDIA QUERY**/
+/**iPad Pro**/
+@media only screen and (min-width: 768px) {
+  /*Index*/
+  .hello_width {
+    width:55%;
+    margin-left:22.5%;
+  }
+
+  .hello_width p {
+  	line-height:2.5em;
+  }
+
+  .contain_border {
+  	width:65%;
+  	margin-left:17.5%;
+  }
+
+  footer {
+  	margin-top:125px;
+  }
+  /*RugsUSA*/
+  .work_tile {
+  	width:100%;
+  	height:400px;
+  	margin-left:unset;
+  }
+
+  .rugs_brief p {
+  	width:65%;
+  	margin-left:17.5%;
+  }
+
+  .homepage_wt{
+  	width:65%;
+  	margin-left:17.5%;
+  }
+
+  	.rugs_brief p {
+  		width:575px;
+  		margin:auto;
+  	}
+  	.rug_image, .l_rug_image {
+  		width:575px;
+  		display:block;
+  		margin:auto;
+  		margin-top:40px;
+  		margin-bottom:40px;
+  	}
+	.indiv_lightbox {
+		width:575px;
+		margin:auto;
+	}
+  	.sm_rug_image {
+  		width:300px !important;
+  		display:block;
+  		margin:auto;
+  	}
+}
+
+.work_pages {
+	display:none;
+}
+
+
+.work_tile_left {
+	left:3000px;
+}
+.work_tile_right {
+	right:3000px;
+}
+
+@media only screen and (min-width: 1120px){
+	.work_tile, .contain_border {
+		width:720px;
+		margin:auto;
+		margin-top:40px;
+		margin-bottom:40px;
+	}
+	.hello_width p {
+  		width:550px;
+  		margin:auto;
+  	}
+  	.rugs_brief p {
+  		width:575px;
+  		margin:auto;
+  	}
+  	.rug_image, .l_rug_image {
+  		width:575px;
+  		display:block;
+  		margin:auto;
+  		margin-top:40px;
+  		margin-bottom:40px;
+  	}
+	  .indiv_lightbox {
+		width:575px;
+		margin:auto;
+	}
+  	.sm_rug_image {
+  		width:300px !important;
+  		display:block;
+  		margin:auto;
+  	}
 }
