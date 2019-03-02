@@ -1,27 +1,21 @@
 <?php
-// Details
-$message="$message";
-
-
-// Mail of sender
-$mail_from="$email"; 
-
-// From 
-$header="from: $name <$mail_from>";
-
-
-// Enter your email address
-$to ='seo.kenny94@gmail.com';
-
-$send_contact=mail($to,$message,$header);
-
-
-// Check, if message sent to your email 
-// display message "We've recived your information"
-if($send_contact){
-echo "We've recived your contact information";
-}
-else {
-echo "ERROR";
-}
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: TangledDemo'; 
+    $to = 'seo.kenny94@gmail.com'; 
+    $subject = 'Hello';
+    $human = $_POST['human'];
+			
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+				
+    if ($_POST['submit'] && $human == '4') {				 
+        if (mail ($to, $subject, $body, $from)) { 
+	    echo '<p>Your message has been sent!</p>';
+	} else { 
+	    echo '<p>Something went wrong, go back and try again!</p>'; 
+	} 
+    } else if ($_POST['submit'] && $human != '4') {
+	echo '<p>You answered the anti-spam question incorrectly!</p>';
+    }
 ?>
