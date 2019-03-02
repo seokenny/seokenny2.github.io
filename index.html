@@ -86,20 +86,20 @@
 				<h1>CONTACT.</h1>
 				<p>FEEL FREE TO CONTACT ME FOR ANY INQUIRIES</p>
 			</div>
-		  <form action="action_page.php">
+		  <form action="contactform.php" method="post">
 		  	<div class="contact_row">
 		    	<label for="name" class="c_number"><span class="c_num_pos">01</span></label>
 		    	<input  class="c_input" type="text" id="name" name="name" placeholder="Your Name..">
 			</div>
 
 		  	<div class="contact_row email_row hidden_c_row">
-		    	<label for="name" class="c_number"><span class="c_num_pos">02</span></label>
-		    	<input  class="c_input" type="text" id="name" name="name" placeholder="Your Email..">
+		    	<label for="email" class="c_number"><span class="c_num_pos">02</span></label>
+		    	<input  class="c_input" type="text" id="email" name="email" placeholder="Your Email..">
 			</div>
 
 			<div class="contact_row message_row">
-		    	<label for="subject" class="c_number"><span class="c_num_pos">03</span></label>
-		    	<textarea id="subject" class="contact_textarea" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+		    	<label for="message" class="c_number"><span class="c_num_pos">03</span></label>
+		    	<textarea id="message" class="contact_textarea" name="message" placeholder="Your Message.." style="height:200px"></textarea>
 			</div>
 
 		    <input type="submit" value="SUBMIT" class="sub_button">
