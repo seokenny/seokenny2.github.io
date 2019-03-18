@@ -1,0 +1,154 @@
+@media only screen and (max-width:1640px){
+
+}
+
+@media only screen and (max-width:1312px){
+	.wt_c_edit {
+		height:50%;
+		width:37.5%;
+	}
+}
+
+@media only screen and (max-width:1304px){
+	.wt_c_edit {
+		height:50%;
+	}
+}
+
+@media only screen and (max-width:1244px){
+/*	.work_para {
+		font-size:0.75em;
+	}*/
+	.right_work_descript {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:1040px){
+	.work_select_contain {
+		width:75%;
+	}
+	.right_work_descript {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:1024px){
+	#work_contain {
+		height:55%;
+	}
+	.work_tile {
+		width:50%;
+		height:50%;
+		padding-top:unset;
+	}
+}
+
+@media only screen and (max-width:961px){
+	.wt_c_edit {
+		height:60%;
+	}
+	#work_contain {
+		height:55%;
+	}
+}
+
+@media only screen and (max-width:876px){
+	.wt_c_edit {
+		width:60%;
+	}
+}
+
+@media only screen and (max-width:778px){
+	.work_para {
+		font-size:0.7em;
+	}
+}
+
+/**Start of mobile-ish and burgermenu**/
+
+@media only screen and (max-width:548px){
+	.burgermenu {
+		display:block;
+		position:fixed;
+		z-index:90000;
+		height:35px;
+		margin:9px 0 0 0;
+		right:9px;
+	}
+	.bmx {
+		margin-right:unset;
+	}
+	.nav_bar {
+		display:none;
+	}
+	.wt_c_edit {
+		width:80%;
+	}
+	#work_contain {
+		height:75%;
+		width:75%;
+	}
+	.work_tile {
+		height:25%;
+		width:100%;
+	}
+	.work_header {
+		font-size:2em;
+	}
+	.contain_border {
+		width:80%;
+	}
+}
+
+@media only screen and (max-width:475px){
+	.contact_text h1 {
+		font-size:2.5em;
+	}
+	.c_num_pos {
+		font-size:2.5em;
+	}
+	.c_input {
+		font-size:80%;
+	}
+	.contact_textarea {
+		font-size:80%;
+	}
+}
+
+@media only screen and (max-width:411px){
+	.hello {
+		font-size:2.5em;
+	}
+	.c_input {
+		font-size:75%;
+	}
+	.contact_textarea {
+		font-size:80%;
+	}
+}
+
+@media only screen and (max-width:400px){
+	.wt_role {
+		font-size:0.5em;
+	}
+	.contact_text h1 {
+		font-size:2em;
+	}
+	.c_num_pos {
+		font-size:2em;
+	}
+	.contact_textarea {
+		font-size:80%;
+	}
+}
+
+@media only screen and (max-width:342px){
+	.hello {
+		font-size:2.25em;
+	}
+}
+
+@media only screen and (max-width:320px){
+
+}
