@@ -195,7 +195,7 @@ a {
 	width:100%;
 	background-color:rgba(0,0,0,.7);
 	position:fixed;
-	z-index:30000;
+	z-index:95000;
 	left:100%;
 }
 
@@ -375,6 +375,15 @@ footer {
 	width:100%;
 }
 
+.sl_center {
+	right:20px;
+	top:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	letter-spacing:0.1em;
+}
+
 .social_list li {
 	margin:unset;
 	display:inline-block;
@@ -389,6 +398,32 @@ footer {
 .copyright {
 	font-size:0.5em;
 	margin-top:7.5px;
+}
+
+/**SOCIAL**/
+.social_button {
+	margin-top:15px;
+}
+
+.social_button img {
+	width:40px;
+	height:40px;
+}
+
+.social_side {
+	position:fixed;
+	right:20px;
+	z-index:80000;
+}
+
+.social_side li {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.social_side img {
+	height:22.5px;
+	width:22.5px;
 }
 
 /**MISC**/

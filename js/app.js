@@ -1,20 +1,4 @@
 $(document).ready(function(){
-
-	// $(".nav_home").on("click",function(){
-	// 	$("#tester").stop().animate({left:'0'},750);
-	// });
-	// $("#tester").stop().on("click",function(){
-	// 	$("#tester").stop().animate({left:'100%'},750);
-	// });
-
-	// $(".nav_home").on("click",function(){
-	// 	$("#tester").stop().animate({left:'0'},750);
-	// });
-	// $("#tester").stop().on("click",function(){
-	// 	$("#tester").stop().animate({left:'100%'},750);
-	// });
-
-
 	$("#about_contain").fadeIn("slow");
 	$("#about_contain").addClass("active");
 
@@ -321,4 +305,13 @@ $(document).ready(function(){
 			$(".mobile_nav").stop().slideUp(250);
 		});
 	}
+
+	$(".go_back").on("click",function(){
+		$(".rugsusa_contain").stop().fadeOut();
+		$(".mystiq_contain").stop().fadeOut();
+		$(".guesser_contain").stop().fadeOut();
+		$("#work_full").stop().animate({left:'100%'},750,function(){
+				showTiles();
+		});
+	});
 });
