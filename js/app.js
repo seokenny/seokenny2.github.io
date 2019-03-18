@@ -191,6 +191,23 @@ $(document).ready(function(){
 		});
 	});
 
+	//FUYU
+	$(".wt2").on("click",function(){
+		$(".work_tile").stop().fadeOut(function(){
+			$("#work_full").stop().animate({left:'0'},750,function(){
+				$(".fuyu_contain").fadeIn();
+			});
+		});
+	});
+
+	$(".work_header").on("click",function(){
+		$(".fuyu_contain").stop().fadeOut();
+		$("#work_full").stop().animate({left:'100%'},750,function(){
+			showTiles();
+		});
+	});
+
+
 
 	//GUESSER
 	$(".wt4").on("click",function(){
@@ -314,4 +331,16 @@ $(document).ready(function(){
 				showTiles();
 		});
 	});
+
 });
+//Dimmer
+// $(window).resize(function() {
+//  var width = $(window).width();
+// if (width <= 548) {
+//     $(".dimmer").fadeIn();
+// }
+// else if (width > 548){
+// 	$(".dimmer").fadeOut();
+// }
+
+// });

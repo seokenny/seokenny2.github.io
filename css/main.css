@@ -6,10 +6,6 @@
 	letter-spacing:0.2em;
 }
 
-#main_contain {
-	position:fixed;
-}
-
 h1,h2,h3,h4,h5,h6,ul {
 	margin:unset;
 	padding:unset;
@@ -31,6 +27,12 @@ a {
 	position:relative;
 	height:100vh;
 	width:100%;
+}
+
+.dimmer {
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,.45);
 }
 
 .nav_bar {
@@ -177,10 +179,6 @@ a {
 	width:100%;
 }
 
-.rugs_color {
-	background-color:#FF3C3C;
-}
-
 .fuyu_color {
 	background-color:#633CFF;
 }
@@ -191,6 +189,35 @@ a {
 
 .guesser_color {
 	background-color:#D62BD9;
+}
+
+.wt1 {
+	background-image:url("../images/rugsbanner.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.wt2 {
+	background-image:url("../images/fuyubanner.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.wt3 {
+	background-image:url("../images/mysticbanner.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.wt4 {
+	background-image:url("../images/guesserbanner.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.wip_x img {
+	height:100%;
+	width:100%;
 }
 
 /**WORK FULL**/
@@ -215,6 +242,10 @@ a {
 	display:inline-block;
 }*/
 
+.go_back {
+	cursor:pointer;
+}
+
 .right_work_descript {
 	margin-left:2.5%;
 	height:100%;
@@ -233,6 +264,8 @@ a {
 .work_link {
 	margin:10px 0;
 	display:inline-block;
+	font-weight:bold;
+	color:white;
 }
 
 .work_title {
@@ -455,11 +488,11 @@ footer {
 }
 
 .lightboxOverlay {
-	z-index:60000;
+	z-index:99998;
 }
 
 .lightbox {
-	z-index:70000;
+	z-index:99999;
 }
 
 .text_left {

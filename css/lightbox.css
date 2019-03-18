@@ -10,7 +10,7 @@ html.lb-disable-scrolling {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99998;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -21,7 +21,7 @@ html.lb-disable-scrolling {
   position: absolute;
   left: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 99999;
   text-align: center;
   line-height: 0;
   font-weight: normal;
@@ -142,6 +142,7 @@ html.lb-disable-scrolling {
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
+  display:none;
   *zoom: 1;
   width: 100%;
   border-bottom-left-radius: 4px;
@@ -180,7 +181,7 @@ html.lb-disable-scrolling {
   display: block;
   clear: left;
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 0;
   color: #999999;
 }
 
