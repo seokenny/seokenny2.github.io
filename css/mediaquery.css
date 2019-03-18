@@ -99,6 +99,9 @@
 	.contain_border {
 		width:80%;
 	}
+	.social_side {
+		display:none;
+	}
 }
 
 @media only screen and (max-width:475px){
