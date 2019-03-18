@@ -1,21 +1,14 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: TangledDemo'; 
-    $to = 'seo.kenny94@gmail.com'; 
-    $subject = 'Hello';
-    $human = $_POST['human'];
-			
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-				
-    if ($_POST['submit'] && $human == '4') {				 
-        if (mail ($to, $subject, $body, $from)) { 
-	    echo '<p>Your message has been sent!</p>';
-	} else { 
-	    echo '<p>Something went wrong, go back and try again!</p>'; 
-	} 
-    } else if ($_POST['submit'] && $human != '4') {
-	echo '<p>You answered the anti-spam question incorrectly!</p>';
-    }
-?>
+
+if(isset($_POST)['submit']){
+	$name = $_POST['name'];
+	$mailFrom = $_POST['email'];
+	$message = $_POST['message'];
+
+	$mailTo = "seo.kenny94@gmail.com";
+	$headers = "From: ".$mailFrom;
+	$txt = "You have received an email from ".$name.".\n\n".$message;
+
+	mail($mailTo, $txt, $headers);
+	header("Location: index.php?mailsend");
+}
