@@ -325,6 +325,7 @@ $(document).ready(function(){
 
 	$(".go_back").on("click",function(){
 		$(".rugsusa_contain").stop().fadeOut();
+		$(".fuyu_contain").stop().fadeOut();
 		$(".mystiq_contain").stop().fadeOut();
 		$(".guesser_contain").stop().fadeOut();
 		$("#work_full").stop().animate({left:'100%'},750,function(){
