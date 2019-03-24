@@ -1,0 +1,443 @@
+* {
+    margin:unset;
+    padding:unset;
+    font-family:"Rubik";
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+    margin:unset;
+    padding:unset;
+}
+
+ul {
+    list-style-type:none;
+}
+
+#main_contain {
+    height:100vh;
+    width:100%;
+}
+
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
+/**BOTH SIDES**/
+#left_contain, #right_contain {
+    width:50%;
+    height:100vh;
+}
+
+
+/**LEFT SIDE**/
+#left_contain {
+    color:white;
+    position:fixed;
+    background-image:url("../images/ramen_shop.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    /* z-index:2; */
+}
+
+#right_contain {
+    position:relative;
+}
+
+.white_shroud {
+    background-color:rgba(255,255,255,0.2);
+    height:100%;
+    width:100%
+}
+
+.logo {
+    height:150px;
+    width:150px;
+}
+
+.nav_bar li {
+    margin:35px 0;
+    cursor:pointer;
+    letter-spacing:0.3em;
+    font-size:0.85em;
+    font-family:"Roboto";
+    font-weight:bold;
+}
+
+.social_list {
+    display:flex;
+    justify-content:center;
+}
+
+.social_list li {
+    margin:0 5px;
+}
+
+.social_list img {
+    height:100%;
+    width:100%;
+}
+
+.temp_sb {
+    width:25px;
+    height:25px;
+}
+/**RIGHT SIDE**/
+#right_contain {
+    margin-left:50%;
+    /* z-index:-1; */
+}
+
+.fuyu_name {
+    font-family:"Roboto";
+    font-weight:bold;
+    font-size:1.25em;
+    letter-spacing:0.2em;
+}
+
+.fuyu_store {
+    height:100%;
+    width:100%;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.photo_gallery {
+    overflow-y:scroll;
+    position:relative;
+    z-index:-1;
+}
+
+.black_shroud {
+    background-color:rgba(0, 0, 0, 0.25);
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.photo_tile {
+    width:50%;
+    padding-top:50%;
+    float:left;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.pt1 {
+    background-image:url("../images/1.jpg");
+}
+.pt2 {
+    background-image:url("../images/2.jpg");
+}
+.pt3 {
+    background-image:url("../images/3.jpg");
+}
+.pt4 {
+    background-image:url("../images/4.jpg");
+}
+.pt5 {
+    background-image:url("../images/5.jpg");
+}
+.pt6 {
+    background-image:url("../images/6.jpg");
+}
+
+/**ABOUT**/
+.fuyu_storefront {
+    width:40%;
+    margin-left:30%;
+}
+
+.fuyu_storefront img {
+    height:100%;
+    width:100%;
+}
+
+.fuyu_photo {
+    padding:15px;
+    border:5px solid rgb(26, 26, 26);
+}
+
+.f_a_padding {
+    padding-top:10%;;
+    padding-bottom:10%;
+}
+
+.fuyu_about {
+    width:65%;
+    margin-left:17.5%;
+    text-align:center;
+}
+
+.fuyu_about_title {
+    margin-bottom:20px;
+}
+
+.fuyu_para {
+    font-size:0.8em;
+    line-height:20px;
+    margin:10px 0;
+}
+
+.box-half-bottom {
+    border-bottom:10px solid black;
+    border-top:unset;
+}
+
+.half_box {
+    
+}
+/**MENU**/
+.menu_contain {
+    width:80%;
+    z-index:2;
+    margin-left:10%;
+    /* background-image:url("../images/japwavedim.jpg"); */
+    background-size:cover;
+    height:100vh;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    overflow-y:scroll;
+}
+
+.menu_txt {
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:15px;
+    letter-spacing:0.2em;
+}
+
+.left_items, .right_items {
+    width:44.5%;
+    display:inline-block;
+    text-align:center;
+    font-size:0.7em;
+    letter-spacing:0.2em;
+    line-height:20px;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+
+.right_items {
+    vertical-align:top;
+}
+
+.items_row {
+    width:100%;
+}
+
+.menu_heading {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    letter-spacing:0.2em;
+}
+
+.lower_heading {
+    text-align:center;
+    font-size:0.7em;
+    font-weight:bold;
+    letter-spacing:0.2em;
+    line-height:20px;
+    margin:15px 0;
+}
+
+.menu_item {
+    font-weight:bold;
+    font-size:1em;
+}
+
+.price {
+    font-weight:bold;
+}
+
+.l_item {
+    width:49.75%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:0.8em;
+    letter-spacing:0.2em;
+    line-height:20px;
+}
+
+.temp_item {
+    width:80%;
+    margin-left:10%;
+}
+
+.each_item_row {
+    width:100%;
+}
+
+/**HOURS LOCATION**/
+.hours_location {
+    height:100%;
+    width:100%;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.hours_section {
+    width:32.75%;
+    display:inline-block;
+    text-align:center;
+    font-size:0.8em;
+}
+
+.fuyu_map {
+    width:325px;
+    height:325px;
+}
+
+.num_loc {
+    margin:30px 0;
+    font-size:0.85em;
+    letter-spacing:0.2em;
+    line-height:20px;
+    font-weight:bold;
+}
+
+.mon_wed {
+    text-align:right;
+}
+
+.sunday {
+    text-align:left;
+}
+
+.hl_pic {
+    width:100%;
+    height:100%;
+}
+
+.open_days {
+    margin-bottom:10px;
+}
+
+.map_google {
+    width:100%;
+    height:350px;
+}
+
+.open_hrs {
+    line-height:2em;
+}
+
+/**FOOTER**/
+.hp_address, .hp_phone, .social_list, .copyright {
+    margin-top:10px;
+}
+
+.hp_address {
+    font-size:0.75em;
+}
+
+.hp_phone {
+    font-size:0.75em;
+}
+
+.copyright {
+    font-size:0.6em
+}
+
+/**MISC**/
+::-webkit-scrollbar {
+	display:none;
+}
+
+.hidden {
+    display:none;
+}
+
+.liner {
+    width:100%;
+    height:1px;
+    background-color:black;
+    margin:15px 0;
+}
+
+.vert_liner {
+    height:100%;
+    width:1px;
+    background-color:black;
+    display:inline-block;
+    position:absolute;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.dark_shroud {
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.9);
+}
+
+/**TABLET / MOBILE**/
+#tablet_contain {
+    width:100%;
+    height:100vh;
+    background-image:url("../images/ramen_shop.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.hp-content_contain {
+    color:white;
+}
+
+.mobile_burger_bar {
+    position:fixed;
+    z-index:80000;
+    width:100%;
+}
+
+.burger_button {
+    cursor:pointer;
+}
+
+.mobile_burger_bar img {
+    width:30px;
+    height:30px;
+    margin:10px 20px 0 0;
+}
+
+.mobile_nav {
+    height:100vh;
+    width:100%;
+    background-color:black;
+    position:fixed;
+    z-index:90000;
+}
+
+.single_bar_container {
+    position:absolute;
+    right:5px;
+}
+
+.m_nav_bar {
+    color:white;
+    cursor:pointer;
+    font-size:2em;
+    font-family:"Roboto";
+    font-weight:bold;
+}
+
+.single_bar {
+    height:3px;
+    width:27px;
+    background-color:white;
+    margin:5px 0;
+}

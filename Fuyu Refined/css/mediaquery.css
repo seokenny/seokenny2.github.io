@@ -1,0 +1,81 @@
+@media only screen and (max-width:1297px){
+    .l_item {
+        width:49%;
+    }
+}
+
+@media only screen and (max-width:1263px){
+    .hours_section {
+        width:30%;
+    }
+}
+
+@media only screen and (min-width:769px){
+    #mobile_full {
+        display:none;
+    }
+    #main_contain {
+        display:block;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #mobile_full {
+        display:block;
+    }
+    /**TABLET QUERY**/
+    .nav_bar {
+        display:none;
+    }
+
+    #right_contain {
+        width:100%;
+    }
+    
+    .fuyu_store {
+        height:100vh;
+    }
+    .hours_location {
+        height:100vh;
+    }
+}
+
+@media only screen and (max-width:548px){
+    .left_items, .right_items {
+        width:100%;
+        margin-left:unset;
+        margin-right:unset;
+    }
+    .fuyu_about {
+        width:80%;
+        margin-left:10%;
+    }
+}
+
+@media only screen and (max-width:520px){
+    .l_item {
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width:475px){
+    .half_box {
+        width:50%;
+    }
+    .fuyu_para {
+        font-size:0.7em;
+    }
+    .num_loc {
+        font-size:0.75em;
+    }
+    .open_days {
+        margin-bottom:unset;
+    }
+    .open_hrs {
+        line-height:unset;
+    }
+    .hours_section {
+        font-size:0.7em;
+    }
+}
